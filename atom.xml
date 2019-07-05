@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-05T01:39:19.404Z</updated>
+  <updated>2019-07-05T13:29:49.985Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,20 +17,24 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>CS61B-1:Java Intro, Classes, Git</title>
-    <link href="http://yoursite.com/2019/07/05/CS61B-1-Java-Intro-Classes-Git/"/>
-    <id>http://yoursite.com/2019/07/05/CS61B-1-Java-Intro-Classes-Git/</id>
-    <published>2019-07-05T03:14:26.000Z</published>
-    <updated>2019-07-05T01:39:19.404Z</updated>
+    <title>CS61B-1:Java Intro, Classes</title>
+    <link href="http://yoursite.com/2019/07/05/CS61B-1-Java-Intro-Classes/"/>
+    <id>http://yoursite.com/2019/07/05/CS61B-1-Java-Intro-Classes/</id>
+    <published>2019-07-05T15:14:00.000Z</published>
+    <updated>2019-07-05T13:29:49.985Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Running-a-Java-Program&quot;&gt;&lt;a href=&quot;#Running-a-Java-Program&quot; class=&quot;headerlink&quot; title=&quot;Running a Java Program&quot;&gt;&lt;/a&gt;Running a Java Program&lt;/h2&gt;&lt;p&gt;.java -&amp;gt; javac (compiler) -&amp;gt; .class (Java bytecode) -&amp;gt; java (Interpreter) -&amp;gt; stuff happens&lt;br&gt;.class file =&amp;gt; safer (type checked) / faster (for machine to execute) / protect intellectual property&lt;/p&gt;
-&lt;h2 id=&quot;System-out-print-VS-System-out-println&quot;&gt;&lt;a href=&quot;#System-out-print-VS-System-out-println&quot; class=&quot;headerlink&quot; title=&quot;System.out.print VS System.out.println&quot;&gt;&lt;/a&gt;System.out.print VS System.out.println&lt;/h2&gt;&lt;p&gt;System.out.print does not include a newline (a return)&lt;/p&gt;
+      &lt;h3 id=&quot;Running-a-Java-Program&quot;&gt;&lt;a href=&quot;#Running-a-Java-Program&quot; class=&quot;headerlink&quot; title=&quot;Running a Java Program&quot;&gt;&lt;/a&gt;Running a Java Program&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;.java-&amp;gt; javac (compiler) -&amp;gt; .class (Java bytecode) -&amp;gt; java (Interpreter) -&amp;gt; runs&lt;/li&gt;
+&lt;li&gt;.class file&lt;br&gt;  1. safer (type checked)&lt;br&gt;  2. faster (for machine to execute)&lt;br&gt;  3. protect intellectual property&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
       <category term="CS61B" scheme="http://yoursite.com/categories/CS61B/"/>
+    
+      <category term="Lecture Notes" scheme="http://yoursite.com/categories/CS61B/Lecture-Notes/"/>
     
     
       <category term="Java" scheme="http://yoursite.com/tags/Java/"/>

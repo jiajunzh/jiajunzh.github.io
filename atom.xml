@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-05T13:32:26.136Z</updated>
+  <updated>2019-07-06T00:33:24.292Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Git: Local &amp; Remote Repo</title>
+    <link href="http://yoursite.com/2019/07/06/Git-Local-Remote-Repo/"/>
+    <id>http://yoursite.com/2019/07/06/Git-Local-Remote-Repo/</id>
+    <published>2019-07-06T03:00:50.000Z</published>
+    <updated>2019-07-06T00:33:24.292Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Git-amp-Local-Repos&quot;&gt;&lt;a href=&quot;#Git-amp-Local-Repos&quot; class=&quot;headerlink&quot; title=&quot;Git &amp;amp; Local Repos&quot;&gt;&lt;/a&gt;Git &amp;amp; Local Repos&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Version Control System&lt;/strong&gt;&lt;br&gt;&amp;emsp;Track the history of code revision&lt;br&gt;&amp;emsp;Git is a distributed version control system&lt;br&gt;&amp;emsp;&amp;emsp;&amp;emsp;each developer’s computer store the entire history&lt;br&gt;&amp;emsp;Repository = entire history of an entire project&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Git" scheme="http://yoursite.com/categories/Git/"/>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CS61B-1:Java Intro, Classes</title>
     <link href="http://yoursite.com/2019/07/05/CS61B-1-Java-Intro-Classes/"/>
     <id>http://yoursite.com/2019/07/05/CS61B-1-Java-Intro-Classes/</id>
     <published>2019-07-05T15:14:00.000Z</published>
-    <updated>2019-07-05T13:32:26.136Z</updated>
+    <updated>2019-07-06T00:29:24.702Z</updated>
     
     <summary type="html">
     

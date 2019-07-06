@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-06T00:33:24.292Z</updated>
+  <updated>2019-07-06T15:11:08.384Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,92 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CS61B-2: Bits, Type, Lists, Sets</title>
+    <link href="http://yoursite.com/2019/07/06/CS61B-2-Bits-Type-Lists/"/>
+    <id>http://yoursite.com/2019/07/06/CS61B-2-Bits-Type-Lists/</id>
+    <published>2019-07-06T15:24:11.000Z</published>
+    <updated>2019-07-06T15:11:08.384Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;&lt;p&gt;Arrays have a fixed size ?&lt;br&gt;Then come Lists !&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Bits&quot;&gt;&lt;a href=&quot;#Bits&quot; class=&quot;headerlink&quot; title=&quot;Bits&quot;&gt;&lt;/a&gt;Bits&lt;/h3&gt;&lt;blockquote&gt;&lt;p&gt;Memory is stored as a sequence of 0 and 1 and bits Interpreted using types&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Variable Types&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;8 primitive types: byte, short, int, long, float, double, char, boolean&lt;/li&gt;
+&lt;li&gt;Reference Types&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="CS61B" scheme="http://yoursite.com/categories/CS61B/"/>
+    
+      <category term="Lecture Notes" scheme="http://yoursite.com/categories/CS61B/Lecture-Notes/"/>
+    
+    
+      <category term="Bits" scheme="http://yoursite.com/tags/Bits/"/>
+    
+      <category term="Type" scheme="http://yoursite.com/tags/Type/"/>
+    
+      <category term="LinkedList" scheme="http://yoursite.com/tags/LinkedList/"/>
+    
+      <category term="ArrayList" scheme="http://yoursite.com/tags/ArrayList/"/>
+    
+      <category term="Set" scheme="http://yoursite.com/tags/Set/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Knuth-Morris-Pratt(KMP) Algorithm</title>
+    <link href="http://yoursite.com/2019/07/06/Knuth-Morris-Pratt-KMP-Algorithm/"/>
+    <id>http://yoursite.com/2019/07/06/Knuth-Morris-Pratt-KMP-Algorithm/</id>
+    <published>2019-07-06T14:17:18.000Z</published>
+    <updated>2019-07-06T02:18:33.212Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://yoursite.com/categories/Algorithm/LeetCode/"/>
+    
+    
+      <category term="KMP" scheme="http://yoursite.com/tags/KMP/"/>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/tags/Algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Big Data Analytics</title>
+    <link href="http://yoursite.com/2019/07/06/Big-Data-Analytics/"/>
+    <id>http://yoursite.com/2019/07/06/Big-Data-Analytics/</id>
+    <published>2019-07-06T13:54:21.000Z</published>
+    <updated>2019-07-06T01:59:14.567Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="CC" scheme="http://yoursite.com/categories/CC/"/>
+    
+      <category term="Big Data Analytics" scheme="http://yoursite.com/categories/CC/Big-Data-Analytics/"/>
+    
+    
+      <category term="sequential analytics" scheme="http://yoursite.com/tags/sequential-analytics/"/>
+    
+      <category term="MapReduce" scheme="http://yoursite.com/tags/MapReduce/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Git: Local &amp; Remote Repo</title>
     <link href="http://yoursite.com/2019/07/06/Git-Local-Remote-Repo/"/>
     <id>http://yoursite.com/2019/07/06/Git-Local-Remote-Repo/</id>
     <published>2019-07-06T03:00:50.000Z</published>
-    <updated>2019-07-06T00:33:24.292Z</updated>
+    <updated>2019-07-06T02:02:09.676Z</updated>
     
     <summary type="html">
     
@@ -42,7 +123,7 @@
     <link href="http://yoursite.com/2019/07/05/CS61B-1-Java-Intro-Classes/"/>
     <id>http://yoursite.com/2019/07/05/CS61B-1-Java-Intro-Classes/</id>
     <published>2019-07-05T15:14:00.000Z</published>
-    <updated>2019-07-06T00:29:24.702Z</updated>
+    <updated>2019-07-06T08:13:26.581Z</updated>
     
     <summary type="html">
     

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-07T09:41:50.533Z</updated>
+  <updated>2019-07-07T14:50:47.670Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,47 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CS61B-3:Testing, Inheritance, Interface, Extends, Comparable, Comparator, ADTs, Abstract Class</title>
+    <link href="http://yoursite.com/2019/07/08/CS61B-3/"/>
+    <id>http://yoursite.com/2019/07/08/CS61B-3/</id>
+    <published>2019-07-07T23:07:10.000Z</published>
+    <updated>2019-07-07T14:50:47.670Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Testing&quot;&gt;&lt;a href=&quot;#Testing&quot; class=&quot;headerlink&quot; title=&quot;Testing&quot;&gt;&lt;/a&gt;Testing&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Junit Testing&lt;/strong&gt;&lt;br&gt;Library =&amp;gt; org.junit &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Junit Methods&lt;/strong&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;org.junit.Assert.assertArrayEquals(expected, input);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="CS61B" scheme="http://yoursite.com/categories/CS61B/"/>
+    
+      <category term="Lecture Notes" scheme="http://yoursite.com/categories/CS61B/Lecture-Notes/"/>
+    
+    
+      <category term="Testing" scheme="http://yoursite.com/tags/Testing/"/>
+    
+      <category term="Inheritance" scheme="http://yoursite.com/tags/Inheritance/"/>
+    
+      <category term="Interface" scheme="http://yoursite.com/tags/Interface/"/>
+    
+      <category term="Extends" scheme="http://yoursite.com/tags/Extends/"/>
+    
+      <category term="Comparable, Comparator" scheme="http://yoursite.com/tags/Comparable-Comparator/"/>
+    
+      <category term="ADTs" scheme="http://yoursite.com/tags/ADTs/"/>
+    
+      <category term="Abstract Class" scheme="http://yoursite.com/tags/Abstract-Class/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Dynamic Programming</title>
     <link href="http://yoursite.com/2019/07/08/Dynamic-Programming/"/>
     <id>http://yoursite.com/2019/07/08/Dynamic-Programming/</id>
     <published>2019-07-07T17:26:21.000Z</published>
-    <updated>2019-07-07T09:41:50.533Z</updated>
+    <updated>2019-07-07T15:45:26.697Z</updated>
     
     <summary type="html">
     

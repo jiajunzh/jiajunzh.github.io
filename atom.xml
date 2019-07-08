@@ -41,12 +41,41 @@
     <link href="http://yoursite.com/2019/07/08/CS61B-4/"/>
     <id>http://yoursite.com/2019/07/08/CS61B-4/</id>
     <published>2019-07-08T03:52:14.000Z</published>
-    <updated>2019-07-07T15:52:14.021Z</updated>
+    <updated>2019-07-08T11:31:36.293Z</updated>
     
     <summary type="html">
     
+      &lt;h3 id=&quot;Generics-and-Autoboxing&quot;&gt;&lt;a href=&quot;#Generics-and-Autoboxing&quot; class=&quot;headerlink&quot; title=&quot;Generics and Autoboxing&quot;&gt;&lt;/a&gt;Generics and Autoboxing&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Automatic Conversions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Autoboxing and Unboxing&lt;/strong&gt;&lt;br&gt;Cannot provide primitive type as an actual type argument&lt;br&gt;Use corresponding reference type (wrapper classes)&lt;br&gt;Java implicitly convert between primitive and wrapper types&lt;br&gt;Arrays are never auto-boxed or auto-unboxed&lt;br&gt;&amp;emsp;&amp;emsp;e.g. Integer[] x = (int[]) x; (compiler not allowed)&lt;br&gt;autoboxing and unboxing has a measurable performance impact&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+    
     </summary>
     
+      <category term="CS61B" scheme="http://yoursite.com/categories/CS61B/"/>
+    
+      <category term="Lecture Notes" scheme="http://yoursite.com/categories/CS61B/Lecture-Notes/"/>
+    
+    
+      <category term="Autoboxing" scheme="http://yoursite.com/tags/Autoboxing/"/>
+    
+      <category term="Widening" scheme="http://yoursite.com/tags/Widening/"/>
+    
+      <category term="Immutability" scheme="http://yoursite.com/tags/Immutability/"/>
+    
+      <category term="Generic Method" scheme="http://yoursite.com/tags/Generic-Method/"/>
+    
+      <category term="Type Upper Bounds" scheme="http://yoursite.com/tags/Type-Upper-Bounds/"/>
+    
+      <category term="Exception" scheme="http://yoursite.com/tags/Exception/"/>
+    
+      <category term="Iteration" scheme="http://yoursite.com/tags/Iteration/"/>
+    
+      <category term="Object Class" scheme="http://yoursite.com/tags/Object-Class/"/>
+    
+      <category term="Package" scheme="http://yoursite.com/tags/Package/"/>
+    
+      <category term="Access Control" scheme="http://yoursite.com/tags/Access-Control/"/>
     
   </entry>
   
@@ -91,7 +120,7 @@
     <link href="http://yoursite.com/2019/07/08/Dynamic-Programming/"/>
     <id>http://yoursite.com/2019/07/08/Dynamic-Programming/</id>
     <published>2019-07-07T17:26:21.000Z</published>
-    <updated>2019-07-08T08:49:04.760Z</updated>
+    <updated>2019-07-08T10:09:28.633Z</updated>
     
     <summary type="html">
     

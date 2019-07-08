@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="sequential analytics,MapReduce,">
+  <meta name="keywords" content="dynamic programming,">
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="A Programmer Who Wants A Stupid Dog ╮(￣▽ ￣)╭">
-<meta name="keywords" content="sequential analytics,MapReduce">
+<meta name="description" content="Input is an array for which the ith element is the price of a given stock on day i.Find the maximum profit. You may complete at most two transactions.Note: You may not engage in multiple transactions">
+<meta name="keywords" content="dynamic programming">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Big Data Analytics">
-<meta property="og:url" content="http://yoursite.com/2019/07/06/Big-Data-Analytics/index.html">
+<meta property="og:title" content="LeetCode #123 Best Time to Buy and Sell Stock III">
+<meta property="og:url" content="http://yoursite.com/2019/07/09/LeetCode-123/index.html">
 <meta property="og:site_name" content="Bazinga!">
-<meta property="og:description" content="A Programmer Who Wants A Stupid Dog ╮(￣▽ ￣)╭">
+<meta property="og:description" content="Input is an array for which the ith element is the price of a given stock on day i.Find the maximum profit. You may complete at most two transactions.Note: You may not engage in multiple transactions">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-06T01:59:14.567Z">
+<meta property="og:updated_time" content="2019-07-08T08:48:32.107Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Big Data Analytics">
-<meta name="twitter:description" content="A Programmer Who Wants A Stupid Dog ╮(￣▽ ￣)╭">
+<meta name="twitter:title" content="LeetCode #123 Best Time to Buy and Sell Stock III">
+<meta name="twitter:description" content="Input is an array for which the ith element is the price of a given stock on day i.Find the maximum profit. You may complete at most two transactions.Note: You may not engage in multiple transactions">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/06/Big-Data-Analytics/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/09/LeetCode-123/">
 
 
 
 
 
-  <title>Big Data Analytics | Bazinga!</title>
+  <title>LeetCode #123 Best Time to Buy and Sell Stock III | Bazinga!</title>
   
 
 
@@ -291,7 +291,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/06/Big-Data-Analytics/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/09/LeetCode-123/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Blue DogHair">
@@ -308,7 +308,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Big Data Analytics</h1>
+          <h1 class="post-title" itemprop="name headline">LeetCode #123 Best Time to Buy and Sell Stock III</h1>
         
 
         <div class="post-meta">
@@ -320,8 +320,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-06T21:54:21+08:00">
-                2019-07-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-09T04:06:53+08:00">
+                2019-07-08
               </time>
             
 
@@ -336,8 +336,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-07-06T09:59:14+08:00">
-                2019-07-05
+              <time title="Post modified" itemprop="dateModified" datetime="2019-07-08T16:48:32+08:00">
+                2019-07-08
               </time>
             
           </span>
@@ -355,19 +355,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CC/" itemprop="url" rel="index">
-                    <span itemprop="name">CC</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CC/Big-Data-Analytics/" itemprop="url" rel="index">
-                    <span itemprop="name">Big Data Analytics</span>
+                  <a href="/categories/LeetCode/" itemprop="url" rel="index">
+                    <span itemprop="name">LeetCode</span>
                   </a>
                 </span>
 
@@ -403,7 +392,20 @@
       
 
       
-        
+        <blockquote><p>Input is an array for which the ith element is the price of a given stock on day i.<br>Find the maximum profit. You may complete at most two transactions.<br>Note: You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).</p>
+<a id="more"></a>
+<p>Example 1:<br>Input: [3,3,5,0,0,3,1,4]<br>Output: 6<br>Explanation: Buy on day 4 (price = 0), sell on day 6 (price = 3), profit = 3-0 = 3.<br>Then buy on day 7 (price = 1), sell on day 8 (price = 4), profit = 4-1 = 3.</p>
+</blockquote>
+
+<p>This is a hard-level problem on the LeetCode, which takes me much time to think about. Thus, I’d like to write this post to review this problem.</p>
+<p>Basically, we can imagine this as two separate purchase-selling process, i.e. [first buy …. first sell] [second buy …. second sell]. It is worth noting that second buy happens only after the first sell. In this way, we can turn this two processes into one-time purchase-selling process which the price on i-th day takes the maximum profits before day i into account.<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$newPrices[i] = prices[i] - maximum\ Profit\ of\ first\ buy$<br>Using dynamic programming algorithm, the implementation is shown as below.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxProfit</span><span class="params">(<span class="keyword">int</span>[] prices)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (prices == <span class="keyword">null</span> || prices.length &lt;= <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> maxProfit = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> minCost = prices[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">int</span>[] dp = <span class="keyword">new</span> <span class="keyword">int</span>[prices.length];</span><br><span class="line">        dp[<span class="number">0</span>] = prices[<span class="number">0</span>];</span><br><span class="line">        <span class="comment">// compute the newPrice and store the record in dp[]</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; prices.length; i++) &#123;</span><br><span class="line">            minCost = Math.min(minCost, prices[i]);</span><br><span class="line">            maxProfit = Math.max(maxProfit, prices[i] - minCost);</span><br><span class="line">            dp[i] = prices[i] - maxProfit;  </span><br><span class="line">        &#125;</span><br><span class="line">        maxProfit = <span class="number">0</span>;</span><br><span class="line">        minCost = prices[<span class="number">0</span>];</span><br><span class="line">        <span class="comment">// find the max profit as you only buy once</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; prices.length; i++) &#123;</span><br><span class="line">            minCost = Math.min(minCost, dp[i]);</span><br><span class="line">            maxProfit = Math.max(maxProfit, prices[i] - minCost);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> maxProfit;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>The above implementation takes two pass. However, if we look a little deeper, we can find that the two pass can actually be combined as one like below.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxProfit</span><span class="params">(<span class="keyword">int</span>[] prices)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> sell1 = <span class="number">0</span>; <span class="comment">// maximum profit after first sell</span></span><br><span class="line">        <span class="keyword">int</span> sell2 = <span class="number">0</span>; <span class="comment">// total maximum profit after second sell</span></span><br><span class="line">        <span class="keyword">int</span> buy1 = Integer.MAX_VALUE;</span><br><span class="line">        <span class="keyword">int</span> buy2 = Integer.MAX_VALUE;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; prices.length; i++) &#123;</span><br><span class="line">            buy1 = Math.min(buy1, prices[i]);</span><br><span class="line">            sell1 = Math.max(sell1, prices[i] - buy1);</span><br><span class="line">            buy2 = Math.min(buy2, prices[i] - sell1);</span><br><span class="line">            sell2 = Math.max(sell2, prices[i] - buy2);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sell2;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Well, I think the above approach is the most compact way to solve this while I think there are other perspectives to look at this problem. For instance, using DP, you can build two arrays, one to store the maximum profit of one buy-sell before day i and one for after day i. We just find the Max(Sum(two arrays)) to solve this problem.</p>
+
       
     </div>
     
@@ -420,9 +422,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/sequential-analytics/" rel="tag"># sequential analytics</a>
-          
-            <a href="/tags/MapReduce/" rel="tag"># MapReduce</a>
+            <a href="/tags/dynamic-programming/" rel="tag"># dynamic programming</a>
           
         </div>
       
@@ -435,8 +435,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/06/Git-Local-Remote-Repo/" rel="next" title="Git: Local & Remote Repo">
-                <i class="fa fa-chevron-left"></i> Git: Local & Remote Repo
+              <a href="/2019/07/08/CS61B-4/" rel="next" title="CS61B-4">
+                <i class="fa fa-chevron-left"></i> CS61B-4
               </a>
             
           </div>
@@ -444,10 +444,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/06/Knuth-Morris-Pratt-KMP-Algorithm/" rel="prev" title="Knuth-Morris-Pratt(KMP) Algorithm">
-                Knuth-Morris-Pratt(KMP) Algorithm <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

@@ -93,7 +93,7 @@
 <meta property="og:image" content="http://yoursite.com/2019/07/08/Dynamic-Programming/1.2.png">
 <meta property="og:image" content="http://yoursite.com/2019/07/08/Dynamic-Programming/1.3.png">
 <meta property="og:image" content="http://yoursite.com/2019/07/08/Dynamic-Programming/1.4.png">
-<meta property="og:updated_time" content="2019-07-07T15:45:26.697Z">
+<meta property="og:updated_time" content="2019-07-08T08:49:04.760Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Dynamic Programming">
 <meta name="twitter:description" content="Those who cannot  remember the past are condemned to repeat it.   Starting From Fibonacci NumberFibonacci Number is a series of number satisfying $F(n) = F(n - 1) + F(n - 2)$, for examaple, {0, 1, 1,">
@@ -341,8 +341,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-07-07T23:45:26+08:00">
-                2019-07-07
+              <time title="Post modified" itemprop="dateModified" datetime="2019-07-08T16:49:04+08:00">
+                2019-07-08
               </time>
             
           </span>
@@ -424,7 +424,7 @@
 <p>Ok, now let’s take a deeper look by comparing the memoization approach and non-memoization approach in the context of the fibonacci problem.</p>
 <p>First, the time complexity. For the non-memoization approach, the time complexity is $O(2^n)$ while for the memoization approach is $O(n)$ which is much better. Then for the space complexity. Remember, space complexity takes any memory you use into account including the call stack. Thus, the space complexity of non-memoization approach is $O(n)$ (e.g. fib(6) - fib(5) - fib(4) - fib(3) - fib(2) - fib(1), the fib(6) has not called fib(4) yet) and it is the same for the memoization approach too (memory for record table).</p>
 <hr>
-<h3 id="Tabulation"><a href="#Tabulation" class="headerlink" title="Tabulation"></a>Tabulation</h3><p>Different from Memoization, tabulation solves the problem by starting from the most trivial subproblem, upwards to the top.</p>
+<h3 id="Down-Top-Tabulation"><a href="#Down-Top-Tabulation" class="headerlink" title="Down-Top Tabulation"></a>Down-Top Tabulation</h3><p>Different from Memoization, tabulation solves the problem by starting from the most trivial subproblem, upwards to the top.</p>
 <p>Let’s look at an example to see how this works.</p>
 <blockquote><p>Calculate the total number of possible path to the destination in the image</p>
 </blockquote>
@@ -440,7 +440,7 @@
 <p>Basically, optimization and combinatorial problems are of the two most typical problem of dynamic programming problems. The optimization problem requires you to find a feasible solution so that the objective function can be optimized while the combinatorial problems want you to compute the number of ways to do something or possibility of some event happening.</p>
 <p>Do note that similar to divide-and-conquer though it is, dynamic programming is better when there is overlapping between the subproblems while the divide-and-conquer doesn’t.</p>
 <hr>
-<h3 id="Problem-Number-in-LeetCode"><a href="#Problem-Number-in-LeetCode" class="headerlink" title="Problem Number in LeetCode"></a>Problem Number in LeetCode</h3><p>#53<br>#174 (Dungeon Game) For boundary, can assign dp[m+1][n+1] instead of dp[m][n]<br>#552 (Student Attendance Record II)</p>
+<h3 id="Problem-Number-in-LeetCode"><a href="#Problem-Number-in-LeetCode" class="headerlink" title="Problem Number in LeetCode"></a>Problem Number in LeetCode</h3><p>#53 (Maximum Subarray)<br>#62 - #63 - #64 (Path Stuff)<br>#123 (Best time to buy and sell III)<br>#174 (Dungeon Game) For boundary, can assign dp[m+1][n+1] instead of dp[m][n]<br>#552 (Student Attendance Record II)</p>
 <p>Reference:<br>&emsp;<a href="https://www.youtube.com/watch?v=P8Xa2BitN3I" target="_blank" rel="noopener">youtube - Algorithms: Memoization and Dynamic Programming</a><br>&emsp;<a href="https://www.freecodecamp.org/news/an-intro-to-algorithms-dynamic-programming-dd00873362bb/" target="_blank" rel="noopener">An intro to Algorithms: Dynamic Programming</a><br>&emsp;<a href="https://www.codechef.com/wiki/tutorial-dynamic-programming#Problem_:_Minimum_Steps_to_One" target="_blank" rel="noopener">Tutorial For Dynamic Programming</a></p>
 
       
@@ -565,7 +565,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -576,7 +576,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -587,7 +587,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-count">22</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -643,7 +643,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Starting-From-Fibonacci-Number"><span class="nav-number">1.</span> <span class="nav-text">Starting From Fibonacci Number</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Top-Down-Memoization"><span class="nav-number">2.</span> <span class="nav-text">Top-Down Memoization</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tabulation"><span class="nav-number">3.</span> <span class="nav-text">Tabulation</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Divide-the-Problem-Recursively"><span class="nav-number">3.1.</span> <span class="nav-text">Divide the Problem Recursively</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Memoization-vs-Recursion"><span class="nav-number">3.2.</span> <span class="nav-text">Memoization vs. Recursion</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Start-by-the-Most-Trivial-Problem"><span class="nav-number">3.3.</span> <span class="nav-text">Start by the Most Trivial Problem</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Summary"><span class="nav-number">4.</span> <span class="nav-text">Summary</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Problem-Number-in-LeetCode"><span class="nav-number">5.</span> <span class="nav-text">Problem Number in LeetCode</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Starting-From-Fibonacci-Number"><span class="nav-number">1.</span> <span class="nav-text">Starting From Fibonacci Number</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Top-Down-Memoization"><span class="nav-number">2.</span> <span class="nav-text">Top-Down Memoization</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Down-Top-Tabulation"><span class="nav-number">3.</span> <span class="nav-text">Down-Top Tabulation</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Divide-the-Problem-Recursively"><span class="nav-number">3.1.</span> <span class="nav-text">Divide the Problem Recursively</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Memoization-vs-Recursion"><span class="nav-number">3.2.</span> <span class="nav-text">Memoization vs. Recursion</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Start-by-the-Most-Trivial-Problem"><span class="nav-number">3.3.</span> <span class="nav-text">Start by the Most Trivial Problem</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Summary"><span class="nav-number">4.</span> <span class="nav-text">Summary</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Problem-Number-in-LeetCode"><span class="nav-number">5.</span> <span class="nav-text">Problem Number in LeetCode</span></a></li></ol></div>
             
 
           </div>

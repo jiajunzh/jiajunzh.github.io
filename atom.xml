@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-07T14:50:47.670Z</updated>
+  <updated>2019-07-08T08:48:32.107Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode #123 Best Time to Buy and Sell Stock III</title>
+    <link href="http://yoursite.com/2019/07/09/LeetCode-123/"/>
+    <id>http://yoursite.com/2019/07/09/LeetCode-123/</id>
+    <published>2019-07-08T20:06:53.000Z</published>
+    <updated>2019-07-08T08:48:32.107Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;&lt;p&gt;Input is an array for which the ith element is the price of a given stock on day i.&lt;br&gt;Find the maximum profit. You may complete at most two transactions.&lt;br&gt;Note: You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).&lt;/p&gt;&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://yoursite.com/categories/LeetCode/"/>
+    
+    
+      <category term="dynamic programming" scheme="http://yoursite.com/tags/dynamic-programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CS61B-4</title>
+    <link href="http://yoursite.com/2019/07/08/CS61B-4/"/>
+    <id>http://yoursite.com/2019/07/08/CS61B-4/</id>
+    <published>2019-07-08T03:52:14.000Z</published>
+    <updated>2019-07-07T15:52:14.021Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>CS61B-3:Testing, Inheritance, Interface, Extends, Comparable, Comparator, ADTs, Abstract Class</title>
@@ -57,7 +91,7 @@
     <link href="http://yoursite.com/2019/07/08/Dynamic-Programming/"/>
     <id>http://yoursite.com/2019/07/08/Dynamic-Programming/</id>
     <published>2019-07-07T17:26:21.000Z</published>
-    <updated>2019-07-07T15:45:26.697Z</updated>
+    <updated>2019-07-08T08:49:04.760Z</updated>
     
     <summary type="html">
     

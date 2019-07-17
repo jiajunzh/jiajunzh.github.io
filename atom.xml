@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-08T08:48:32.107Z</updated>
+  <updated>2019-07-17T10:43:10.364Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,19 +17,50 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>LeetCode #123 Best Time to Buy and Sell Stock III</title>
-    <link href="http://yoursite.com/2019/07/09/LeetCode-123/"/>
-    <id>http://yoursite.com/2019/07/09/LeetCode-123/</id>
-    <published>2019-07-08T20:06:53.000Z</published>
-    <updated>2019-07-08T08:48:32.107Z</updated>
+    <title>CS61B-5:Asymptotics, Binary Search, Amortized Analysis</title>
+    <link href="http://yoursite.com/2019/07/18/CS61B-5/"/>
+    <id>http://yoursite.com/2019/07/18/CS61B-5/</id>
+    <published>2019-07-17T21:19:15.000Z</published>
+    <updated>2019-07-17T10:43:10.364Z</updated>
     
     <summary type="html">
     
-      &lt;blockquote&gt;&lt;p&gt;Input is an array for which the ith element is the price of a given stock on day i.&lt;br&gt;Find the maximum profit. You may complete at most two transactions.&lt;br&gt;Note: You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).&lt;/p&gt;&lt;/blockquote&gt;
+      &lt;h3 id=&quot;Efficient-Programming&quot;&gt;&lt;a href=&quot;#Efficient-Programming&quot; class=&quot;headerlink&quot; title=&quot;Efficient Programming&quot;&gt;&lt;/a&gt;Efficient Programming&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Efficiency&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Programming Cost&lt;/strong&gt;&lt;br&gt;  Develop programs&lt;br&gt;  Read, modify and maintain code&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Execution cost&lt;/strong&gt;&lt;br&gt;  Time Complexity&lt;br&gt;  Space Complexity&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="CS61B" scheme="http://yoursite.com/categories/CS61B/"/>
+    
+      <category term="Lecture Notes" scheme="http://yoursite.com/categories/CS61B/Lecture-Notes/"/>
+    
+    
+      <category term="Asymptotics" scheme="http://yoursite.com/tags/Asymptotics/"/>
+    
+      <category term="Binary Search" scheme="http://yoursite.com/tags/Binary-Search/"/>
+    
+      <category term="Amortized Analysis" scheme="http://yoursite.com/tags/Amortized-Analysis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode-Dynamic Programming</title>
+    <link href="http://yoursite.com/2019/07/17/LeetCode-Dynamic-Programming/"/>
+    <id>http://yoursite.com/2019/07/17/LeetCode-Dynamic-Programming/</id>
+    <published>2019-07-16T21:19:14.000Z</published>
+    <updated>2019-07-16T09:28:28.505Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;123-Best-Time-to-Buy-and-Sell-Stock-III&quot;&gt;&lt;a href=&quot;#123-Best-Time-to-Buy-and-Sell-Stock-III&quot; class=&quot;headerlink&quot; title=&quot;#123 Best Time to Buy and Sell Stock III&quot;&gt;&lt;/a&gt;#123 Best Time to Buy and Sell Stock III&lt;/h3&gt;&lt;blockquote&gt;&lt;p&gt;Input is an array for which the ith element is the price of a given stock on day i.&lt;br&gt;Find the maximum profit. You may complete at most two transactions.&lt;br&gt;Note: You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).&lt;/p&gt;&lt;/blockquote&gt;
     
     </summary>
     
       <category term="LeetCode" scheme="http://yoursite.com/categories/LeetCode/"/>
+    
+      <category term="dynamic programming" scheme="http://yoursite.com/categories/LeetCode/dynamic-programming/"/>
     
     
       <category term="dynamic programming" scheme="http://yoursite.com/tags/dynamic-programming/"/>
@@ -37,11 +68,11 @@
   </entry>
   
   <entry>
-    <title>CS61B-4</title>
+    <title>CS61B-4:Autoboxing &amp; Widening, Immutability, Generic Methods &amp; Type Upper Bounds, Exception, Iteration, Object Methods, Package &amp; Access Control</title>
     <link href="http://yoursite.com/2019/07/08/CS61B-4/"/>
     <id>http://yoursite.com/2019/07/08/CS61B-4/</id>
     <published>2019-07-08T03:52:14.000Z</published>
-    <updated>2019-07-08T11:31:36.293Z</updated>
+    <updated>2019-07-15T00:42:40.048Z</updated>
     
     <summary type="html">
     
@@ -120,7 +151,7 @@
     <link href="http://yoursite.com/2019/07/08/Dynamic-Programming/"/>
     <id>http://yoursite.com/2019/07/08/Dynamic-Programming/</id>
     <published>2019-07-07T17:26:21.000Z</published>
-    <updated>2019-07-08T10:09:28.633Z</updated>
+    <updated>2019-07-15T13:37:48.309Z</updated>
     
     <summary type="html">
     

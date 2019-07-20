@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Disjoint Set,BST,">
 
 
 
@@ -81,16 +81,24 @@
 
 
 
-<meta name="description" content="A Programmer Who Wants A Stupid Dog ╮(￣▽ ￣)╭">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Bazinga!">
-<meta property="og:url" content="http://yoursite.com/tags/git/index.html">
+<meta name="description" content="Disjoint Set Introduction to Disjoint Set  Disjoints sets: two sets having no elements in common  connect(x, y): connect x and y, known as union  isConnect(x, y): returns true if x and y are connected">
+<meta name="keywords" content="Disjoint Set,BST">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CS61B-6:Disjoint Set, Binary Search Tree">
+<meta property="og:url" content="http://yoursite.com/2019/07/21/CS61B-6/index.html">
 <meta property="og:site_name" content="Bazinga!">
-<meta property="og:description" content="A Programmer Who Wants A Stupid Dog ╮(￣▽ ￣)╭">
+<meta property="og:description" content="Disjoint Set Introduction to Disjoint Set  Disjoints sets: two sets having no elements in common  connect(x, y): connect x and y, known as union  isConnect(x, y): returns true if x and y are connected">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2019/07/21/CS61B-6/1.1.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/21/CS61B-6/1.2.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/21/CS61B-6/1.3.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/21/CS61B-6/1.4.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/21/CS61B-6/1.5.png">
+<meta property="og:updated_time" content="2019-07-20T11:29:12.060Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Bazinga!">
-<meta name="twitter:description" content="A Programmer Who Wants A Stupid Dog ╮(￣▽ ￣)╭">
+<meta name="twitter:title" content="CS61B-6:Disjoint Set, Binary Search Tree">
+<meta name="twitter:description" content="Disjoint Set Introduction to Disjoint Set  Disjoints sets: two sets having no elements in common  connect(x, y): connect x and y, known as union  isConnect(x, y): returns true if x and y are connected">
+<meta name="twitter:image" content="http://yoursite.com/2019/07/21/CS61B-6/1.1.png">
 
 
 
@@ -120,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/git/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/21/CS61B-6/">
 
 
 
 
 
-  <title>Tag: git | Bazinga!</title>
+  <title>CS61B-6:Disjoint Set, Binary Search Tree | Bazinga!</title>
   
 
 
@@ -148,7 +156,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/jiajunzh/jiajunzh.github.io.git" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
@@ -275,52 +283,253 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>git<small>Tag</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/21/CS61B-6/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Blue DogHair">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/head.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bazinga!">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/07/06/Git-Local-Remote-Repo/" itemprop="url">
-              
-                <span itemprop="name">Git: Local & Remote Repo</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">CS61B-6:Disjoint Set, Binary Search Tree</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-05T23:00:50-04:00" content="2019-07-05">
-          07-05
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-21T07:06:09+08:00">
+                2019-07-20
+              </time>
+            
 
-    </header>
-  </article>
+            
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified&#58;</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2019-07-20T19:29:12+08:00">
+                2019-07-20
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CS61B/" itemprop="url" rel="index">
+                    <span itemprop="name">CS61B</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CS61B/Lecture-Notes/" itemprop="url" rel="index">
+                    <span itemprop="name">Lecture Notes</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="Disjoint-Set"><a href="#Disjoint-Set" class="headerlink" title="Disjoint Set"></a>Disjoint Set</h3><ul>
+<li><strong>Introduction to Disjoint Set</strong><br>  Disjoints sets: two sets having no elements in common<br>  connect(x, y): connect x and y, known as union<br>  isConnect(x, y): returns true if x and y are connected  <a id="more"></a>
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">DisjointSets</span> </span>&#123;</span><br><span class="line">    <span class="comment">/** connects two items P and Q */</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">connect</span><span class="params">(<span class="keyword">int</span> p, <span class="keyword">int</span> q)</span></span>;</span><br><span class="line">    <span class="comment">/** checks to see if two items are connected */</span></span><br><span class="line">    <span class="function"><span class="keyword">boolean</span> <span class="title">isConnected</span><span class="params">(<span class="keyword">int</span> p, <span class="keyword">int</span> q)</span></span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><strong>ListSet</strong><br>  As a List of sets e.g. List&lt;Set<integer>&gt;<br>  connect(x, y) will be O(N) (iterate all sets to find x and y)</integer></li>
+<li><strong>Quick Find</strong>        <ul>
+<li><strong>Using single array of integers</strong><br>  Indices – element of our set<br>  Value – set number </li>
+<li><strong>connect(x, y)</strong><br>  All the element with set id of x and y should share the same id<br>  runtime θ(N)</li>
+<li><strong>isConnected(x, y)</strong><br>simply check id[x] == id[y] =&gt; constant time θ(1)</li>
+</ul>
+</li>
+<li><strong>Quick Union</strong><br>  Assign each item the index of its parent<br>  If item has no parent (root), assign it a negative value<br>  Need a find(item x) helper function (return the root of tree)<ul>
+<li><strong>connect(x, y)</strong><br>  find each item’s set, make one the child of the other<br>  best case (x and y both roots) -&gt; θ(1)</li>
+<li><strong>isConnected(x, y)</strong><br>  check if find(x) == find(y)</li>
+<li><strong>Performance</strong><br>  Spindly tree =&gt; finding items is expensive in worst case<br>  Bushy tree =&gt; perform well </li>
+</ul>
+</li>
+</ul>
+<p><img src="/2019/07/21/CS61B-6/1.1.png" alt="Quick Union"></p>
+<ul>
+<li><strong>Weighted Quick Union (WQU)</strong><ul>
+<li><strong>New Rule - link the root of the smaller tree to the lager tree</strong><br>  Tree has a maximum height of logN<br>  Definition of smaller/larger : number of items in a tree (Weighted)<br>  Can store the size of the tree as the root items value</li>
+<li><strong>Runtime Proof</strong><br>  For any item x in tree T1, if T1 placed below another tree T2,<br>  &emsp;&emsp;Then depth(x) ++ and size(resulting tree) &gt;= 2 * size(T1)<br>  Maximally log2N times of doubling of trees for N items</li>
+</ul>
+</li>
+<li><strong>Weighted Quick Union with Path Compression</strong><ul>
+<li><strong>Path Compression</strong><br>  When calling find(x), we traverse the path from x to root, but along the way we can connect all the items as we visited to their root at no extra asymptotic cost =&gt; make tree shorter</li>
+<li><strong>Runtime</strong><br>  By calling find(x) enough, all elements will point to root<br>  In the long term, the runtime will become almost constant<br>  For M operations on N items, will be O(N + M(lg*N))</li>
+</ul>
+</li>
+<li><strong>Summary of Disjoint Set Runtime</strong></li>
+</ul>
+<p><img src="/2019/07/21/CS61B-6/1.2.png" alt="Summary of Disjoint Set"></p>
+<hr>
+<h3 id="Binary-Search-Tree-BST"><a href="#Binary-Search-Tree-BST" class="headerlink" title="Binary Search Tree (BST)"></a>Binary Search Tree (BST)</h3><ul>
+<li><strong>From Sorted Linked List to Tree</strong><ul>
+<li><strong>Ordered Linked List – slow key search O(N)</strong><br><img src="/2019/07/21/CS61B-6/1.3.png" alt="Ordered Linked List"></li>
+<li><strong>Potential Optimization: skip list – add extra links</strong></li>
+<li><strong>Improvement #1: Change Entry Point to middle and Flip Left Links</strong><br><img src="/2019/07/21/CS61B-6/1.4.png" alt="Ordered Linked List"></li>
+<li><strong>Improvement #2: Add Pointers to Middle of Each Recursive Half (Tree)</strong><br><img src="/2019/07/21/CS61B-6/1.5.png" alt="Ordered Linked List"></li>
+</ul>
+</li>
+<li><strong>Tree</strong><ul>
+<li><strong>Tree Component</strong><br>  Nodes<br>  Edges that connect those nodes (exactly one path between any 2 nodes)</li>
+<li><strong>Terminology</strong><br>  Root: node without parents<br>  Leaves: nodes without children</li>
+</ul>
+</li>
+<li><strong>Binary Tree</strong><br>  Binary Property: each node with either 0, 1, 2 children</li>
+<li><strong>Binary Search Tree (BST)</strong><ul>
+<li><strong>BST Property</strong><br>  For each node X in the tree:<br>  &emsp;&emsp;Every key in the left subtree is less than X’s key<br>  &emsp;&emsp;Every key in the right subtree is greater than X’s key<br>  No duplicate allowed </li>
+<li><strong>Operations #1: Search</strong><br>  if searchKey == root, return<br>  if searchKey &lt; root, Search left subtree<br>  if searchKey &gt; root, Search right subtree<br>  Repeat until either find the key or no key appears here<br>  Runtime will be θ(logN) for the bushy tree</li>
+<li><strong>Operations #2: Insert</strong><br>  Search key in the tree<br>  &emsp;&emsp; Do nothing if found<br>  &emsp;&emsp; Will be at leaf node if not, just add new element to the position</li>
+<li><strong>Operations #3: Delete</strong><ul>
+<li><strong>Case #1: no children</strong><br>  Delete its parent pointer and node will be garbage collected</li>
+<li><strong>Case #2: one child</strong><br>  Assign its parent’s child pointer to this node’s child</li>
+<li><strong>Case #3: two children – Hibbard deletion</strong><br>  Replace the deleted node with either:<br>  &emsp;&emsp; right-most node in the left subtree<br>  &emsp;&emsp; left-most node in the right subtree<br>  Then delete the node used to replace the deleted node (case 1 or 2)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Disjoint-Set/" rel="tag"># Disjoint Set</a>
+          
+            <a href="/tags/BST/" rel="tag"># BST</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/18/CS61B-5/" rel="next" title="CS61B-5:Asymptotics, Binary Search, Amortized Analysis">
+                <i class="fa fa-chevron-left"></i> CS61B-5:Asymptotics, Binary Search, Amortized Analysis
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -328,6 +537,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -348,8 +561,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -434,6 +656,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Disjoint-Set"><span class="nav-number">1.</span> <span class="nav-text">Disjoint Set</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Binary-Search-Tree-BST"><span class="nav-number">2.</span> <span class="nav-text">Binary Search Tree (BST)</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -576,6 +814,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -978,5 +1220,4 @@
   
 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true}});</script></body>
-</html>
 </html>

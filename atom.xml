@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-17T10:43:10.364Z</updated>
+  <updated>2019-07-20T11:29:12.060Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CS61B-6:Disjoint Set, Binary Search Tree</title>
+    <link href="http://yoursite.com/2019/07/21/CS61B-6/"/>
+    <id>http://yoursite.com/2019/07/21/CS61B-6/</id>
+    <published>2019-07-20T23:06:09.000Z</published>
+    <updated>2019-07-20T11:29:12.060Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Disjoint-Set&quot;&gt;&lt;a href=&quot;#Disjoint-Set&quot; class=&quot;headerlink&quot; title=&quot;Disjoint Set&quot;&gt;&lt;/a&gt;Disjoint Set&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Introduction to Disjoint Set&lt;/strong&gt;&lt;br&gt;  Disjoints sets: two sets having no elements in common&lt;br&gt;  connect(x, y): connect x and y, known as union&lt;br&gt;  isConnect(x, y): returns true if x and y are connected&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="CS61B" scheme="http://yoursite.com/categories/CS61B/"/>
+    
+      <category term="Lecture Notes" scheme="http://yoursite.com/categories/CS61B/Lecture-Notes/"/>
+    
+    
+      <category term="Disjoint Set" scheme="http://yoursite.com/tags/Disjoint-Set/"/>
+    
+      <category term="BST" scheme="http://yoursite.com/tags/BST/"/>
+    
+  </entry>
   
   <entry>
     <title>CS61B-5:Asymptotics, Binary Search, Amortized Analysis</title>
@@ -115,7 +140,7 @@
     <link href="http://yoursite.com/2019/07/08/CS61B-3/"/>
     <id>http://yoursite.com/2019/07/08/CS61B-3/</id>
     <published>2019-07-07T23:07:10.000Z</published>
-    <updated>2019-07-07T14:50:47.670Z</updated>
+    <updated>2019-07-18T02:48:40.311Z</updated>
     
     <summary type="html">
     
@@ -151,7 +176,7 @@
     <link href="http://yoursite.com/2019/07/08/Dynamic-Programming/"/>
     <id>http://yoursite.com/2019/07/08/Dynamic-Programming/</id>
     <published>2019-07-07T17:26:21.000Z</published>
-    <updated>2019-07-15T13:37:48.309Z</updated>
+    <updated>2019-07-19T14:28:20.997Z</updated>
     
     <summary type="html">
     

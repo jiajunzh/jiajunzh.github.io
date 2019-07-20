@@ -90,7 +90,7 @@
 <meta property="og:description" content="Testing Junit TestingLibrary =&amp;gt; org.junit  Junit Methods1org.junit.Assert.assertArrayEquals(expected, input);">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/2019/07/08/CS61B-3/1.1.png">
-<meta property="og:updated_time" content="2019-07-07T14:50:47.670Z">
+<meta property="og:updated_time" content="2019-07-18T02:48:40.311Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CS61B-3:Testing, Inheritance, Interface, Extends, Comparable, Comparator, ADTs, Abstract Class">
 <meta name="twitter:description" content="Testing Junit TestingLibrary =&amp;gt; org.junit  Junit Methods1org.junit.Assert.assertArrayEquals(expected, input);">
@@ -338,8 +338,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-07-07T22:50:47+08:00">
-                2019-07-07
+              <time title="Post modified" itemprop="dateModified" datetime="2019-07-18T10:48:40+08:00">
+                2019-07-17
               </time>
             
           </span>
@@ -460,10 +460,11 @@
 <h3 id="Extends-–-hierarchical-relationship-between-classes"><a href="#Extends-–-hierarchical-relationship-between-classes" class="headerlink" title="Extends – hierarchical relationship between classes"></a>Extends – hierarchical relationship between classes</h3><ul>
 <li><strong>Extends Keyword</strong><ul>
 <li><strong>Members</strong><br>Subclasses inherit all members of the parent class (instance and static vars / methods / all nested classes), private members cannot be directly accessed by subclasses</li>
-<li><strong>Constructor</strong><br>constructors are not inherited<br>all constructor must start with a call to one of superclass’s constructors<ul>
+<li><strong>Constructor</strong><br>constructors are not inherited<br>all constructor must start with a call to one of superclass’s constructors<br>can use this(…) to call a different constructor in the same class<ul>
 <li>explicit call =&gt; <strong><em>super()</em></strong> or Java automatically make a call to superclass’s no-argument constructor </li>
 <li>if having one-argument constructor =&gt; use <strong><em>super(x)</em></strong><br>(implicit call not work)</li>
 <li>invoke superclass’s method by super.methodname()</li>
+<li>cannot use super.super.(…)</li>
 </ul>
 </li>
 </ul>
@@ -668,7 +669,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -690,7 +691,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">35</span>
+                  <span class="site-state-item-count">37</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>

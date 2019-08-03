@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-20T11:29:12.060Z</updated>
+  <updated>2019-07-29T13:43:54.864Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,70 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CS61B-8:Hashing</title>
+    <link href="http://yoursite.com/2019/07/30/CS61B-8/"/>
+    <id>http://yoursite.com/2019/07/30/CS61B-8/</id>
+    <published>2019-07-29T20:43:53.000Z</published>
+    <updated>2019-07-29T13:43:54.864Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Hashing&quot;&gt;&lt;a href=&quot;#Hashing&quot; class=&quot;headerlink&quot; title=&quot;Hashing&quot;&gt;&lt;/a&gt;Hashing&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Issue with the Former Data Structure&lt;/strong&gt;&lt;br&gt;  1. Items need to be comparable&lt;br&gt;  2. Can do better than θ(logN)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data Indexed Integer Set&lt;/strong&gt;&lt;br&gt;  Improve complexity from θ(logN) to θ(1)&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="CS61B" scheme="http://yoursite.com/categories/CS61B/"/>
+    
+      <category term="Lecture Notes" scheme="http://yoursite.com/categories/CS61B/Lecture-Notes/"/>
+    
+    
+      <category term="hashing" scheme="http://yoursite.com/tags/hashing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CS61B-7:Balanced Search Tree, B-Tree, Rotating Tree, Red-Black Tree</title>
+    <link href="http://yoursite.com/2019/07/29/CS61B-7/"/>
+    <id>http://yoursite.com/2019/07/29/CS61B-7/</id>
+    <published>2019-07-29T14:38:42.000Z</published>
+    <updated>2019-07-29T08:42:16.531Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Balanced-Search-Tree-Intro&quot;&gt;&lt;a href=&quot;#Balanced-Search-Tree-Intro&quot; class=&quot;headerlink&quot; title=&quot;Balanced Search Tree Intro&quot;&gt;&lt;/a&gt;Balanced Search Tree Intro&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Runtime: Worst Case vs. Best Case&lt;/strong&gt;&lt;br&gt;  Worst case: θ(N) – spindly tree (equivalently LinkedList)&lt;br&gt;  Best case: θ(logN) (N is number of nodes) – bushy tree&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BST Performance&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Terminology&lt;/strong&gt;&lt;br&gt;  Depth – number of links between a node and root&lt;br&gt;  Height – lowest depth of a tree&lt;br&gt;  Average Depth – average of the total depths in the tree&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="CS61B" scheme="http://yoursite.com/categories/CS61B/"/>
+    
+      <category term="Lecture Notes" scheme="http://yoursite.com/categories/CS61B/Lecture-Notes/"/>
+    
+    
+      <category term="Balanced Search Tree" scheme="http://yoursite.com/tags/Balanced-Search-Tree/"/>
+    
+      <category term="B-Tree" scheme="http://yoursite.com/tags/B-Tree/"/>
+    
+      <category term="2-3-4 Tree" scheme="http://yoursite.com/tags/2-3-4-Tree/"/>
+    
+      <category term="2-3 Tree" scheme="http://yoursite.com/tags/2-3-Tree/"/>
+    
+      <category term="Rotating Tree" scheme="http://yoursite.com/tags/Rotating-Tree/"/>
+    
+      <category term="Red-Black Tree" scheme="http://yoursite.com/tags/Red-Black-Tree/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CS61B-6:Disjoint Set, Binary Search Tree</title>
     <link href="http://yoursite.com/2019/07/21/CS61B-6/"/>
     <id>http://yoursite.com/2019/07/21/CS61B-6/</id>
     <published>2019-07-20T23:06:09.000Z</published>
-    <updated>2019-07-20T11:29:12.060Z</updated>
+    <updated>2019-07-29T08:42:04.282Z</updated>
     
     <summary type="html">
     
@@ -46,7 +105,7 @@
     <link href="http://yoursite.com/2019/07/18/CS61B-5/"/>
     <id>http://yoursite.com/2019/07/18/CS61B-5/</id>
     <published>2019-07-17T21:19:15.000Z</published>
-    <updated>2019-07-17T10:43:10.364Z</updated>
+    <updated>2019-07-29T08:42:11.465Z</updated>
     
     <summary type="html">
     
@@ -176,7 +235,7 @@
     <link href="http://yoursite.com/2019/07/08/Dynamic-Programming/"/>
     <id>http://yoursite.com/2019/07/08/Dynamic-Programming/</id>
     <published>2019-07-07T17:26:21.000Z</published>
-    <updated>2019-07-19T14:28:20.997Z</updated>
+    <updated>2019-07-31T15:18:41.819Z</updated>
     
     <summary type="html">
     

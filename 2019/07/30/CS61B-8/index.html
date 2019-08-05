@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="hashing,">
+  <meta name="keywords" content="Hashing,Heap,Priority Queue,">
 
 
 
@@ -82,17 +82,23 @@
 
 
 <meta name="description" content="Hashing Issue with the Former Data Structure  1. Items need to be comparable  2. Can do better than θ(logN) Data Indexed Integer Set  Improve complexity from θ(logN) to θ(1)">
-<meta name="keywords" content="hashing">
+<meta name="keywords" content="Hashing,Heap,Priority Queue">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CS61B-8:Hashing">
+<meta property="og:title" content="CS61B-8:Hashing, Heap, Priority Queue">
 <meta property="og:url" content="http://yoursite.com/2019/07/30/CS61B-8/index.html">
 <meta property="og:site_name" content="Bazinga!">
 <meta property="og:description" content="Hashing Issue with the Former Data Structure  1. Items need to be comparable  2. Can do better than θ(logN) Data Indexed Integer Set  Improve complexity from θ(logN) to θ(1)">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-29T13:43:54.864Z">
+<meta property="og:image" content="http://yoursite.com/2019/07/30/CS61B-8/1.1.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/30/CS61B-8/1.2.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/30/CS61B-8/1.3.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/30/CS61B-8/1.4.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/30/CS61B-8/1.5.png">
+<meta property="og:updated_time" content="2019-08-05T03:16:22.136Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CS61B-8:Hashing">
+<meta name="twitter:title" content="CS61B-8:Hashing, Heap, Priority Queue">
 <meta name="twitter:description" content="Hashing Issue with the Former Data Structure  1. Items need to be comparable  2. Can do better than θ(logN) Data Indexed Integer Set  Improve complexity from θ(logN) to θ(1)">
+<meta name="twitter:image" content="http://yoursite.com/2019/07/30/CS61B-8/1.1.png">
 
 
 
@@ -128,7 +134,7 @@
 
 
 
-  <title>CS61B-8:Hashing | Bazinga!</title>
+  <title>CS61B-8:Hashing, Heap, Priority Queue | Bazinga!</title>
   
 
 
@@ -308,7 +314,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CS61B-8:Hashing</h1>
+          <h1 class="post-title" itemprop="name headline">CS61B-8:Hashing, Heap, Priority Queue</h1>
         
 
         <div class="post-meta">
@@ -336,8 +342,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-07-29T21:43:54+08:00">
-                2019-07-29
+              <time title="Post modified" itemprop="dateModified" datetime="2019-08-05T11:16:22+08:00">
+                2019-08-04
               </time>
             
           </span>
@@ -455,12 +461,31 @@
 </ul>
 <hr>
 <h3 id="Heaps-and-Priority-Queue"><a href="#Heaps-and-Priority-Queue" class="headerlink" title="Heaps and Priority Queue"></a>Heaps and Priority Queue</h3><ul>
-<li><strong>Priority Queue Interface</strong><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/** (Min) Priority Queue: Allowing tracking and removal of </span></span><br><span class="line"><span class="comment">  * the smallest item in a priority queue. */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">MinPQ</span>&lt;<span class="title">Item</span>&gt; </span>&#123;</span><br><span class="line">    <span class="comment">/** Adds the item to the priority queue. */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(Item x)</span></span>;</span><br><span class="line">    <span class="comment">/** Returns the smallest item in the priority queue. */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Item <span class="title">getSmallest</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="comment">/** Removes the smallest item from the priority queue. */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Item <span class="title">removeSmallest</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="comment">/** Returns the size of the priority queue. */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">size</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
+<li><p><strong>Priority Queue Interface</strong><br>Quickly find the smallest or largest item<br>Space/memory benefits to using PQ =&gt; if only need the top N</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/** (Min) Priority Queue: Allowing tracking and removal of </span></span><br><span class="line"><span class="comment">  * the smallest item in a priority queue. */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">MinPQ</span>&lt;<span class="title">Item</span>&gt; </span>&#123;</span><br><span class="line">    <span class="comment">/** Adds the item to the priority queue. */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(Item x)</span></span>;</span><br><span class="line">    <span class="comment">/** Returns the smallest item in the priority queue. */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Item <span class="title">getSmallest</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="comment">/** Removes the smallest item from the priority queue. */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Item <span class="title">removeSmallest</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="comment">/** Returns the size of the priority queue. */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">size</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Heaps</strong></p>
+<ul>
+<li><strong>Min-heap Definition</strong><br> <strong><em>Min-heap property:</em></strong> each node &lt;= its children<br>  <strong><em>Complete:</em></strong> missing item only at bottom level, all nodes as left as possible</li>
+<li><strong>Heap Operations</strong><ul>
+<li>add: add to then end of the heap temporarily. Swim up to the proper place.</li>
+<li>getSmallest: return the root of the heap</li>
+<li>removeSmallest: Swap the last item in the heap into the root. Sink down to the proper place</li>
+</ul>
+</li>
+<li><strong>Tree Representation of Heap</strong><ul>
+<li>App #1a: Fixed-Width node =&gt; pointers to Children<br>&emsp;<br><img src="/2019/07/30/CS61B-8/1.1.png" alt></li>
+<li>App #1b: Variable-Width =&gt; use of array<br>&emsp;<br><img src="/2019/07/30/CS61B-8/1.2.png" alt></li>
+<li>App #1c: Variable-Width =&gt; reference to siblings<br>&emsp;<br><img src="/2019/07/30/CS61B-8/1.3.png" alt></li>
+<li>App #2: Store a key and a parent array<br>Tree is complete<br>parent array is redundant<br>The order of reading the key array is the same as the level-order<br>&emsp;<br><img src="/2019/07/30/CS61B-8/1.4.png" alt></li>
+<li>App #3: Represent by level order in an array<br>Implementation of Heap<br>leftChild(k) = k * 2,  rightChild(k) = k * 2 + 1,  parent(k) = k / 2<br>&emsp;<br><img src="/2019/07/30/CS61B-8/1.5.png" alt></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Performance Analysis</strong><br>  add - θ(log⁡N )<br>  getSmallest - θ(1)<br>  removeSmallest - θ(logN)<br>  Also solve the problem of duplicate elements<br>  Heap operations are amortized =&gt; resizing<br>  Array-based heaps take arount 1/3rd the memory as App #1a</p>
+</li>
+<li><p><strong>Remaining issues</strong><br>  1. How to order the items (comparator)<br>  2. How to make MinPQ into MaxPQ</p>
 </li>
 </ul>
 
@@ -480,7 +505,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hashing/" rel="tag"># hashing</a>
+            <a href="/tags/Hashing/" rel="tag"># Hashing</a>
+          
+            <a href="/tags/Heap/" rel="tag"># Heap</a>
+          
+            <a href="/tags/Priority-Queue/" rel="tag"># Priority Queue</a>
           
         </div>
       
@@ -502,6 +531,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/08/05/CS61B-9/" rel="prev" title="CS61B-9">
+                CS61B-9 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -580,7 +613,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -602,7 +635,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">44</span>
+                  <span class="site-state-item-count">46</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>

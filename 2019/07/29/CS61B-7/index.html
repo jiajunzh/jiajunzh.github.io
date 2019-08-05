@@ -97,7 +97,7 @@
 <meta property="og:image" content="http://yoursite.com/2019/07/29/CS61B-7/7.6.png">
 <meta property="og:image" content="http://yoursite.com/2019/07/29/CS61B-7/7.7.png">
 <meta property="og:image" content="http://yoursite.com/2019/07/29/CS61B-7/7.8.png">
-<meta property="og:updated_time" content="2019-07-29T08:42:16.531Z">
+<meta property="og:updated_time" content="2019-08-03T03:00:41.678Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CS61B-7:Balanced Search Tree, B-Tree, Rotating Tree, Red-Black Tree">
 <meta name="twitter:description" content="Balanced Search Tree Intro Runtime: Worst Case vs. Best Case  Worst case: θ(N) – spindly tree (equivalently LinkedList)  Best case: θ(logN) (N is number of nodes) – bushy tree BST Performance Terminol">
@@ -345,8 +345,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-07-29T16:42:16+08:00">
-                2019-07-29
+              <time title="Post modified" itemprop="dateModified" datetime="2019-08-03T11:00:41+08:00">
+                2019-08-02
               </time>
             
           </span>
@@ -423,16 +423,23 @@
 <li><strong>Random order</strong><br>  Resulting tree is relatively bushy<br>  Average depth and height expected to be θ(logN)    </li>
 </ul>
 </li>
+<li><strong>Keep Search Tree Balanced</strong><ul>
+<li>BST Rotation (AVL, Weight-balancing, red-black tree)</li>
+<li>B-Trees: 2-3-4 tree / 2-3 tree (no rotation needed)</li>
+</ul>
+</li>
 </ul>
 <hr>
 <h3 id="B-Tree-2-3-4-Tree-2-3-Tree-Intro"><a href="#B-Tree-2-3-4-Tree-2-3-Tree-Intro" class="headerlink" title="B-Tree (2-3-4 Tree/2-3 Tree) Intro"></a>B-Tree (2-3-4 Tree/2-3 Tree) Intro</h3><ul>
 <li><strong>Root of spindly tree</strong><br>  Always insert at a leaf node =&gt; height increase</li>
-<li><strong>Fix #1</strong><br>  Never add leaf node =&gt; add to current leaf node<br>  Problem =&gt; still need to scan thru almost all nodes =&gt; θ(N)<br>  &emsp;<br><img src="/2019/07/29/CS61B-7/7.1.png" alt="add to current node"></li>
-<li><strong>Fix #2 – Split node in half</strong><br>  Set a limit on the number of elements in a single node<br>  &emsp;<br><img src="/2019/07/29/CS61B-7/7.2.png" alt="add to current node"></li>
+<li><strong>Fix #1</strong><br>  Never add leaf node =&gt; add to (overstuff) current leaf node<br>  Problem =&gt; still need to scan thru almost all nodes =&gt; θ(N)<br>  &emsp;<br><img src="/2019/07/29/CS61B-7/7.1.png" alt="add to current node"></li>
+<li><strong>Fix #2 – Split node in half</strong><br>  Set a limit on the number of elements in a single node<br>  break tie: left middle to parent<br>  if root of tree split =&gt; height + 1<br>  &emsp;<br><img src="/2019/07/29/CS61B-7/7.2.png" alt="add to current node"></li>
 <li><strong>2-3 Tree / 2-3-4 Tree (BTree)</strong><br>2-3 Tree splits when they have 2 nodes and one more needs to be added<br>2-3 Tree means the number of children each node can have </li>
 <li><strong>Insertion Process of 2-3-4 Tree</strong><br>1. Always insert into a lead node.<br>2. After adding to the leaf, if new node has 4 nodes =&gt; pop up the middle left node and rearrange the children accordingly<br>3.If results in 4-node parents=&gt; pop up the middle left node again<br>4.Repeat till the parent node can accommodate or you get to the root </li>
+<li><strong>Meaning of BTree</strong><br>  balanced / bushy / broad / Boeing (Contributor) / Bayer</li>
+<li><strong>Application</strong><br>small M(maximum # of children) =&gt; not practically useful<br>M is very large (database or filesystem)</li>
 </ul>
-<h3 id="B-Tree-Invariants-and-Runtime"><a href="#B-Tree-Invariants-and-Runtime" class="headerlink" title="B-Tree Invariants and Runtime"></a>B-Tree Invariants and Runtime</h3><ul>
+<h3 id="B-Tree-Invariants-Runtime-and-Issues"><a href="#B-Tree-Invariants-Runtime-and-Issues" class="headerlink" title="B-Tree Invariants, Runtime and Issues"></a>B-Tree Invariants, Runtime and Issues</h3><ul>
 <li><strong>Invariants</strong><br>  All leaves must be the same distance from the source<br>  Non-leaf node with k items must have k+1 children<br>  Order of insertion changes height of tree but tree always bushy<br>  &emsp;&emsp;e.g. 1,2,3,4,5,6,7 or 2,3,4,5,6,1,7</li>
 <li><strong>Runtime Analysis</strong><ul>
 <li><strong>Worst case</strong><br>  1. # of element in node L reaches maximum<br>  2. Have to traverse to the bottom<ul>
@@ -441,13 +448,14 @@
 </li>
 </ul>
 </li>
-<li><strong>Rotating Trees</strong><ul>
-<li><strong>Tree Rotation (x is the child of G)</strong><ul>
-<li><strong>rotateLeft(G)</strong><br>Let x.left be the right child of G. Make G the new left child of x</li>
-<li><strong>rotateRight(G)</strong><br>Let x.right be the left child of G. Make G the new right child of x</li>
-<li><strong>Non-root node</strong><br>Disconnect the root and rotate, then reconnect to the new root</li>
+<li><strong>Issues</strong><br>  Maintaining different node types is hard (# of items)<br>  Interconversion of nodes between 2-nodes &amp; 3-nodes<br>  Walking up the tree to split nodes</li>
 </ul>
-</li>
+<hr>
+<h3 id="Rotating-Trees"><a href="#Rotating-Trees" class="headerlink" title="Rotating Trees"></a>Rotating Trees</h3><ul>
+<li><strong>Tree Rotation (x is the child of G)</strong><ul>
+<li><strong>rotateLeft(G)</strong><br>  Let x.left be the right child of G. Make G the new left child of x</li>
+<li><strong>rotateRight(G)</strong><br>  Let x.right be the left child of G. Make G the new right child of x</li>
+<li><strong>Non-root node</strong><br>  Disconnect the root and rotate, then reconnect to the new root</li>
 </ul>
 </li>
 </ul>
@@ -458,10 +466,11 @@
 <li><strong>From 2-3 Tree to BST</strong><ul>
 <li><strong>No modification for 2-3 tree with 2 nodes</strong></li>
 <li><strong>2-3 tree with 3 nodes</strong><br>Create a glue node for 2-item node =&gt; waste space / ugly code<br>&emsp;<br><img src="/2019/07/29/CS61B-7/7.3.png" alt="add to current node"></li>
-<li><strong>Left-Leaning Red-Black Tree (LLRB)</strong><br>  Use glue links instead of glue node (made red)<br>  Make the left element a child of the right one<br>  LLRB has 1-1 correspondence with 2-3 trees<br>  &emsp;<br>  <img src="/2019/07/29/CS61B-7/7.4.png" alt="add to current node"></li>
-<li><strong>Properties of LLRB</strong><br>  1-1 correspondence with 2-3 trees<br>  No node has 2 red links (violation of 2-3 tree)<br>  No red right-links<br>  Each path from root to leaf has the same # of black links<br>  Height is no more than 2x height of corresponding 2-3 tree</li>
 </ul>
 </li>
+<li><strong>Left-Leaning Red-Black Tree (LLRB)</strong><br>  Use glue links instead of glue node (made red)<br>  Make the left element a child of the right one<br>  LLRB has 1-1 correspondence with 2-3 trees<br>  &emsp;<br>  <img src="/2019/07/29/CS61B-7/7.4.png" alt="add to current node"></li>
+<li><strong>Properties of LLRB</strong><br>  1-1 correspondence with 2-3 trees<br>  No node has 2 red links (violation of 2-3 tree)<br>  No red right-links<br>  Each path from root to leaf has the same # of black links<br>  Height is no more than ~2x height of corresponding 2-3 tree<br>  (Height(LLRB) &lt;= 2 * H(2-3 tree) + 1)</li>
+<li><strong>Application</strong><br>  java.util.TreeSet</li>
 <li><strong>Insertion into LLRB</strong><ul>
 <li><strong>Big Idea</strong><br>Insert as normal BST and use rotations the massage tree back into proper structure</li>
 <li><strong>Task1: Insertion color</strong><ul>
@@ -538,8 +547,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/30/CS61B-8/" rel="prev" title="CS61B-8:Hashing">
-                CS61B-8:Hashing <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/30/CS61B-8/" rel="prev" title="CS61B-8:Hashing, Heap, Priority Queue">
+                CS61B-8:Hashing, Heap, Priority Queue <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -619,7 +628,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -641,7 +650,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">44</span>
+                  <span class="site-state-item-count">46</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -697,7 +706,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Balanced-Search-Tree-Intro"><span class="nav-number">1.</span> <span class="nav-text">Balanced Search Tree Intro</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#B-Tree-2-3-4-Tree-2-3-Tree-Intro"><span class="nav-number">2.</span> <span class="nav-text">B-Tree (2-3-4 Tree/2-3 Tree) Intro</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#B-Tree-Invariants-and-Runtime"><span class="nav-number">3.</span> <span class="nav-text">B-Tree Invariants and Runtime</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Red-Black-Trees"><span class="nav-number">4.</span> <span class="nav-text">Red-Black Trees</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Balanced-Search-Tree-Intro"><span class="nav-number">1.</span> <span class="nav-text">Balanced Search Tree Intro</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#B-Tree-2-3-4-Tree-2-3-Tree-Intro"><span class="nav-number">2.</span> <span class="nav-text">B-Tree (2-3-4 Tree/2-3 Tree) Intro</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#B-Tree-Invariants-Runtime-and-Issues"><span class="nav-number">3.</span> <span class="nav-text">B-Tree Invariants, Runtime and Issues</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Rotating-Trees"><span class="nav-number">4.</span> <span class="nav-text">Rotating Trees</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Red-Black-Trees"><span class="nav-number">5.</span> <span class="nav-text">Red-Black Trees</span></a></li></ol></div>
             
 
           </div>

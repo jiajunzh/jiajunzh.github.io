@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-05T04:03:49.685Z</updated>
+  <updated>2019-08-28T03:25:18.493Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ConcurrentModificationException</title>
+    <link href="http://yoursite.com/2019/08/27/ConcurrentModificationException/"/>
+    <id>http://yoursite.com/2019/08/27/ConcurrentModificationException/</id>
+    <published>2019-08-27T23:37:29.000Z</published>
+    <updated>2019-08-28T03:25:18.493Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;When using enhanced for loop for collections, the collection itself is not allowed to be modified. ConcurrentModificationException will be thrown if it does. The code below is an example of this.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Bugs" scheme="http://yoursite.com/categories/Bugs/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="bug fix" scheme="http://yoursite.com/tags/bug-fix/"/>
+    
+  </entry>
   
   <entry>
     <title>CS61B-9</title>
@@ -40,8 +62,8 @@
   
   <entry>
     <title>CS61B-8:Hashing, Heap, Priority Queue</title>
-    <link href="http://yoursite.com/2019/07/30/CS61B-8/"/>
-    <id>http://yoursite.com/2019/07/30/CS61B-8/</id>
+    <link href="http://yoursite.com/2019/07/29/CS61B-8/"/>
+    <id>http://yoursite.com/2019/07/29/CS61B-8/</id>
     <published>2019-07-29T20:43:53.000Z</published>
     <updated>2019-08-05T03:16:22.136Z</updated>
     
@@ -103,8 +125,8 @@
   
   <entry>
     <title>CS61B-6:Disjoint Set, Binary Search Tree</title>
-    <link href="http://yoursite.com/2019/07/21/CS61B-6/"/>
-    <id>http://yoursite.com/2019/07/21/CS61B-6/</id>
+    <link href="http://yoursite.com/2019/07/20/CS61B-6/"/>
+    <id>http://yoursite.com/2019/07/20/CS61B-6/</id>
     <published>2019-07-20T23:06:09.000Z</published>
     <updated>2019-07-29T08:42:04.282Z</updated>
     
@@ -128,8 +150,8 @@
   
   <entry>
     <title>CS61B-5:Asymptotics, Binary Search, Amortized Analysis</title>
-    <link href="http://yoursite.com/2019/07/18/CS61B-5/"/>
-    <id>http://yoursite.com/2019/07/18/CS61B-5/</id>
+    <link href="http://yoursite.com/2019/07/17/CS61B-5/"/>
+    <id>http://yoursite.com/2019/07/17/CS61B-5/</id>
     <published>2019-07-17T21:19:15.000Z</published>
     <updated>2019-07-29T08:42:11.465Z</updated>
     
@@ -157,8 +179,8 @@
   
   <entry>
     <title>LeetCode-Dynamic Programming</title>
-    <link href="http://yoursite.com/2019/07/17/LeetCode-Dynamic-Programming/"/>
-    <id>http://yoursite.com/2019/07/17/LeetCode-Dynamic-Programming/</id>
+    <link href="http://yoursite.com/2019/07/16/LeetCode-Dynamic-Programming/"/>
+    <id>http://yoursite.com/2019/07/16/LeetCode-Dynamic-Programming/</id>
     <published>2019-07-16T21:19:14.000Z</published>
     <updated>2019-07-16T09:28:28.505Z</updated>
     
@@ -179,8 +201,8 @@
   
   <entry>
     <title>CS61B-4:Autoboxing &amp; Widening, Immutability, Generic Methods &amp; Type Upper Bounds, Exception, Iteration, Object Methods, Package &amp; Access Control</title>
-    <link href="http://yoursite.com/2019/07/08/CS61B-4/"/>
-    <id>http://yoursite.com/2019/07/08/CS61B-4/</id>
+    <link href="http://yoursite.com/2019/07/07/CS61B-4/"/>
+    <id>http://yoursite.com/2019/07/07/CS61B-4/</id>
     <published>2019-07-08T03:52:14.000Z</published>
     <updated>2019-07-15T00:42:40.048Z</updated>
     
@@ -222,8 +244,8 @@
   
   <entry>
     <title>CS61B-3:Testing, Inheritance, Interface, Extends, Comparable, Comparator, ADTs, Abstract Class</title>
-    <link href="http://yoursite.com/2019/07/08/CS61B-3/"/>
-    <id>http://yoursite.com/2019/07/08/CS61B-3/</id>
+    <link href="http://yoursite.com/2019/07/07/CS61B-3/"/>
+    <id>http://yoursite.com/2019/07/07/CS61B-3/</id>
     <published>2019-07-07T23:07:10.000Z</published>
     <updated>2019-07-18T02:48:40.311Z</updated>
     
@@ -258,8 +280,8 @@
   
   <entry>
     <title>Dynamic Programming</title>
-    <link href="http://yoursite.com/2019/07/08/Dynamic-Programming/"/>
-    <id>http://yoursite.com/2019/07/08/Dynamic-Programming/</id>
+    <link href="http://yoursite.com/2019/07/07/Dynamic-Programming/"/>
+    <id>http://yoursite.com/2019/07/07/Dynamic-Programming/</id>
     <published>2019-07-07T17:26:21.000Z</published>
     <updated>2019-07-31T15:18:41.819Z</updated>
     
@@ -366,8 +388,8 @@
   
   <entry>
     <title>Git: Local &amp; Remote Repo</title>
-    <link href="http://yoursite.com/2019/07/06/Git-Local-Remote-Repo/"/>
-    <id>http://yoursite.com/2019/07/06/Git-Local-Remote-Repo/</id>
+    <link href="http://yoursite.com/2019/07/05/Git-Local-Remote-Repo/"/>
+    <id>http://yoursite.com/2019/07/05/Git-Local-Remote-Repo/</id>
     <published>2019-07-06T03:00:50.000Z</published>
     <updated>2019-07-06T02:02:09.676Z</updated>
     

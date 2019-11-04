@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Autoboxing,Widening,Immutability,Generic Method,Type Upper Bounds,Exception,Iteration,Object Class,Package,Access Control,">
 
 
 
@@ -81,17 +81,22 @@
 
 
 
-<meta name="description" content="public class TrieSet {    private final int R = 128; // ASCII    private Node root; // root of trie    public static class Node {        private char ch;        private boolean isKey;        private D">
+<meta name="description" content="Generics and Autoboxing Automatic Conversions  Autoboxing and UnboxingCannot provide primitive type as an actual type argumentUse corresponding reference type (wrapper classes)Java implicitly convert">
+<meta name="keywords" content="Autoboxing,Widening,Immutability,Generic Method,Type Upper Bounds,Exception,Iteration,Object Class,Package,Access Control">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CS61B-9">
-<meta property="og:url" content="http://yoursite.com/2019/08/05/CS61B-9/index.html">
+<meta property="og:title" content="CS61B-4:Autoboxing &amp; Widening, Immutability, Generic Methods &amp; Type Upper Bounds, Exception, Iteration, Object Methods, Package &amp; Access Control">
+<meta property="og:url" content="http://yoursite.com/2019/07/07/CS61B-4/index.html">
 <meta property="og:site_name" content="Bazinga!">
-<meta property="og:description" content="public class TrieSet {    private final int R = 128; // ASCII    private Node root; // root of trie    public static class Node {        private char ch;        private boolean isKey;        private D">
+<meta property="og:description" content="Generics and Autoboxing Automatic Conversions  Autoboxing and UnboxingCannot provide primitive type as an actual type argumentUse corresponding reference type (wrapper classes)Java implicitly convert">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-05T04:03:49.685Z">
+<meta property="og:image" content="http://yoursite.com/2019/07/07/CS61B-4/1.1.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/07/CS61B-4/1.2.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/07/CS61B-4/1.3.png">
+<meta property="og:updated_time" content="2019-07-15T00:42:40.048Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CS61B-9">
-<meta name="twitter:description" content="public class TrieSet {    private final int R = 128; // ASCII    private Node root; // root of trie    public static class Node {        private char ch;        private boolean isKey;        private D">
+<meta name="twitter:title" content="CS61B-4:Autoboxing &amp; Widening, Immutability, Generic Methods &amp; Type Upper Bounds, Exception, Iteration, Object Methods, Package &amp; Access Control">
+<meta name="twitter:description" content="Generics and Autoboxing Automatic Conversions  Autoboxing and UnboxingCannot provide primitive type as an actual type argumentUse corresponding reference type (wrapper classes)Java implicitly convert">
+<meta name="twitter:image" content="http://yoursite.com/2019/07/07/CS61B-4/1.1.png">
 
 
 
@@ -121,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/08/05/CS61B-9/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/07/CS61B-4/">
 
 
 
 
 
-  <title>CS61B-9 | Bazinga!</title>
+  <title>CS61B-4:Autoboxing & Widening, Immutability, Generic Methods & Type Upper Bounds, Exception, Iteration, Object Methods, Package & Access Control | Bazinga!</title>
   
 
 
@@ -290,7 +295,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/05/CS61B-9/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/07/CS61B-4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Blue DogHair">
@@ -307,7 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CS61B-9</h1>
+          <h1 class="post-title" itemprop="name headline">CS61B-4:Autoboxing & Widening, Immutability, Generic Methods & Type Upper Bounds, Exception, Iteration, Object Methods, Package & Access Control</h1>
         
 
         <div class="post-meta">
@@ -319,8 +324,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-08-05T11:18:24-04:00">
-                2019-08-05
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-07T23:52:14-04:00">
+                2019-07-07
               </time>
             
 
@@ -335,12 +340,45 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-08-05T00:03:49-04:00">
-                2019-08-05
+              <time title="Post modified" itemprop="dateModified" datetime="2019-07-14T20:42:40-04:00">
+                2019-07-14
               </time>
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CS61B/" itemprop="url" rel="index">
+                    <span itemprop="name">CS61B</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CS61B/Lecture-Notes/" itemprop="url" rel="index">
+                    <span itemprop="name">Lecture Notes</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -369,7 +407,114 @@
       
 
       
-        <p>public class TrieSet {<br>    private final int R = 128; // ASCII<br>    private Node root; // root of trie<br>    public static class Node {<br>        private char ch;<br>        private boolean isKey;<br>        private DataIndexedCharMap next;<br>        private Node(char c, boolean blue, int R) {<br>            ch = c;<br>            isKey = blue;<br>            next = new DataIndexedCharMap<node>(R);<br>        }<br>    }<br>}</node></p>
+        <h3 id="Generics-and-Autoboxing"><a href="#Generics-and-Autoboxing" class="headerlink" title="Generics and Autoboxing"></a>Generics and Autoboxing</h3><ul>
+<li><p><strong>Automatic Conversions</strong></p>
+<ul>
+<li><strong>Autoboxing and Unboxing</strong><br>Cannot provide primitive type as an actual type argument<br>Use corresponding reference type (wrapper classes)<br>Java implicitly convert between primitive and wrapper types<br>Arrays are never auto-boxed or auto-unboxed<br>&emsp;&emsp;e.g. Integer[] x = (int[]) x; (compiler not allowed)<br>autoboxing and unboxing has a measurable performance impact<a id="more"></a>
+wrapper types use much more memory than primitive types<br>&emsp;&emsp;every object has a 64 bit refetrence variable and requires 64 bits of<br>&emsp;&emsp;overhead to store things like the dynamic type of the object</li>
+<li><strong>Widening</strong><br>Java automatically widen a primitive if needed<br>Variable of type <strong><em>T1</em></strong> will be implicitly cast to type <strong><em>T2</em></strong> which takes a wider range of values than <strong><em>T1</em></strong> (e.g. int =&gt; double)<br>Have to manually cast when going from a wider type to a narrower type<br>&emsp;&emsp;e.g. double x = 20; int y = (int) x;</li>
+</ul>
+</li>
+<li><p><strong>Immutability</strong><br><strong>immutable data type</strong>: cannot change in any observable way after instantiation<br>&emsp;&emsp;e.g. String =&gt; remain unchanged after calling any method on String<br>any data type with <strong><em>non-private</em></strong> variables is mutable unless declared <strong><em>final</em></strong><br>(<strong><em>final</em></strong>: prevent the variable from being changed after first assignment)</p>
+<ul>
+<li><strong>Pros</strong><br>prevent bugs and makes debugging easier (properties cannot change)<br>can count on objects to have a certain behavior/trait</li>
+<li><strong>Cons</strong><br>need to create a new object in order to change a property<br>Declare a reference as final does not make the object that reference is pointing to immutable<br>Reflection API possibly change even the private variables </li>
+</ul>
+</li>
+<li><p><strong>Generics - Maps&lt;K, V&gt;</strong></p>
+<ul>
+<li><p><strong>Compilation error: assertEquals ambiguous</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ArrayMap&lt;Integer, Integer&gt; am = <span class="keyword">new</span> ArrayMap&lt;&gt;();</span><br><span class="line">am.put(<span class="number">2</span>,<span class="number">5</span>);</span><br><span class="line"><span class="keyword">int</span> expected = <span class="number">5</span>;</span><br><span class="line">assertEquals(expected, am.get(<span class="number">2</span>));</span><br></pre></td></tr></table></figure>
+<p>This is because assertEquals is overloaded, e.g. assertEquals(int expected, int actual), assertEquals(Object expected, Object actual) =&gt; Java does not know which method to call.</p>
+</li>
+<li><p><strong>Generic Methods</strong><br>generics defined in class header (share with all methods) =&gt; Java wait for user to instantiate an object of the class in order to know the actual type<br> ☑️<strong>Declare method as generic</strong></p>
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> &lt;K, V&gt; <span class="function">V <span class="title">get</span><span class="params">(Map61B&lt;K, V&gt; map, String key)</span> </span>&#123;...&#125;    </span><br></pre></td></tr></table></figure>
+<p>  The only issue here is that for maxKey(Map61B), “&gt;”operator only works for primitive. Then we can think of using .compareTo() method instead. But ! not all objects have .compareTo() method. Here, we declare it as K extends Comparable<k>, this means that keys must implement the comparable interface.</k></p>
+<p>  In the end we declare this method as below.</p>
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> &lt;K extends Comparable&lt;K&gt;, V&gt; <span class="function">V <span class="title">get</span><span class="params">(Map61B&lt;K, V&gt; map, String key)</span> </span>&#123;...&#125;    </span><br></pre></td></tr></table></figure>
+<p>  ☑️<strong>Type Upper Bounds</strong><br>  Extends in the above context simply states a fact that K must be a Comparable instead of giving K the abilities of a Comparable</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Summary of generics</strong><br>Autoboxing and auto-unboxing<br>Promotion/Widening between primitive types<br>Generic types for methods (before return type)<br>Type upper bounds in generic methods</p>
+</li>
+</ul>
+<hr>
+<h3 id="Exceptions"><a href="#Exceptions" class="headerlink" title="Exceptions"></a>Exceptions</h3><blockquote><p>Exception breaks normal flow of control, handling error. </p>
+</blockquote>
+<ul>
+<li><strong>Throw Exceptions</strong><br>Exceptions are objects in Java<br>throw new ExceptionObject(para1,…)</li>
+<li><strong>Catching Exceptions</strong><br><strong><em>try</em></strong> and <strong><em>catch</em></strong> breaks the normal flow of the program<br>&emsp;&emsp;protect program from exceptions<br>&emsp;&emsp;corrective action<br>&emsp;&emsp;keep error handling separate from the rest of the program</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">func readFile: &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        open the file;</span><br><span class="line">        determine its size;</span><br><span class="line">        allocate that much memory;</span><br><span class="line">        read the file into memory;</span><br><span class="line">        close the file;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (fileOpenFailed) &#123;</span><br><span class="line">        doSomething;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (sizeDeterminationFailed) &#123;</span><br><span class="line">        doSomething;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (memoryAllocationFailed) &#123;</span><br><span class="line">        doSomething;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (readFailed) &#123;</span><br><span class="line">        doSomething;    </span><br><span class="line">    &#125; <span class="keyword">catch</span> (fileCloseFailed) &#123;</span><br><span class="line">        doSomething;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>Uncaught Exceptions</strong><br>Exception thrown =&gt; descends the call stack =&gt; bottom of the stack =&gt; crash and print out the stack trace        </li>
+</ul>
+<p><img src="/2019/07/07/CS61B-4/1.1.png" alt="uncaught exception"></p>
+<ul>
+<li><strong>Checked vs. Unchecked Exceptions</strong><ul>
+<li><strong>Compilation Error</strong><br>Exception must be caught or declared to be thrown<br>&emsp;=&gt; Compiler thinks some exceptions must be handled</li>
+<li><strong>Checked Exceptions</strong><br>Must be handled<br><strong>2 ways to handle checked error</strong><br>&emsp;<strong>Catch</strong>: handle it right now<br>&emsp;<strong>Specify</strong>: defer handling &amp; mark methods as dangerous  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">dangerMethod</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;…&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span> <span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// main method is also dangerous by calling gulgate</span></span><br><span class="line">    <span class="comment">// handle it by try-catch or specifying</span></span><br><span class="line">    gulgate()</span><br><span class="line">&#125;    </span><br></pre></td></tr></table></figure></li>
+<li><strong>Unchecked Exceptions</strong><br>  Not need to be handle and compile just fine but may crash at runtime<br>  Include <strong>Error</strong> &amp; <strong>RuntimeException</strong> (unknown till runtime &amp; unrecoverable)</li>
+</ul>
+</li>
+</ul>
+<p><img src="/2019/07/07/CS61B-4/1.2.png" alt="uncaught exception"></p>
+<hr>
+<h3 id="Iteration"><a href="#Iteration" class="headerlink" title="Iteration"></a>Iteration</h3><ul>
+<li><strong>Enhanced For Loop</strong> <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Set&lt;String&gt; s = <span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">...</span><br><span class="line"><span class="keyword">for</span> (String city : s) &#123;</span><br><span class="line">...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+The above code translate to <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Set&lt;String&gt; s = <span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">...</span><br><span class="line">Iterator&lt;String&gt; seer = s.iterator();</span><br><span class="line"><span class="keyword">while</span> (seer.hasNext()) &#123;</span><br><span class="line">    String city = seer.next();</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><strong>Iterator</strong><ul>
+<li><strong>Iterable<t></t></strong><br>Collection extends the Iterable interface<br>Enhanced for loop works on object implementing iterable<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Iterable</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line">    <span class="function">Iterator&lt;T&gt; <span class="title">iterator</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><strong>Iterator<t></t></strong><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Iterator</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">hasNext</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function">T <span class="title">next</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+It will throw <strong><em>NoSuchElementException</em></strong> if user calls <em>next()</em> when <em>hasNext()</em> should return false<br>Can make a nested class implementing the Iterator</li>
+<li><strong>Iterable vs. Iterator</strong><br><strong>Iterable</strong> =&gt; the object on which the iterator is performing<br><strong>Iterator</strong> =&gt; defines methods which actually do the iteration</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="Object-Methods"><a href="#Object-Methods" class="headerlink" title="Object Methods"></a>Object Methods</h3><blockquote><p>All classes extend from the Object class.</p>
+</blockquote>
+
+<ul>
+<li><strong>toString()</strong><br>  gives String representation of the object<br>  <strong><em>System.out.print()</em></strong> implicitly calls the method<br>  By default, Object class prints out the address of the object (hexadecimal String)<br>  String ‘+’ operator return a new String each time which take time linearly in the length of the whole String<br>  &emsp;&emsp;=&gt; use <strong>StringBuilder</strong> which is mutable </li>
+<li><strong>equals(Object o)</strong><ul>
+<li><strong>== operator</strong><br>== checks if two variables hold the same bits<br>if equal for primitive and if address equal for reference</li>
+<li><strong>equals(Object o)</strong><br>By default, it is the same as == if not overriden<br>Checks if null or other class (.getClass()) or the same address (i.e. the same object)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="Packages-and-Access-Control"><a href="#Packages-and-Access-Control" class="headerlink" title="Packages and Access Control"></a>Packages and Access Control</h3><ul>
+<li><strong>Packages</strong><ul>
+<li><strong>Package - namespace organizing classes and interface</strong><br>Issue: multiple classes with the same name<br>Solution: Appending class with a website address(backwards)<br>&emsp;&emsp; e.g. ug.joshh.animal; // website is josh.ug</li>
+<li><strong>Using Packages</strong><br>  1. Access within the same package<br>  &emsp;&emsp;Use the class name<br>  2. Outside the package<br>  &emsp;&emsp;Use entire canonical name or import package and use simple name<br>  &emsp;&emsp;<strong>Wildcard import</strong><br>  &emsp;&emsp;&emsp;&emsp;e.g. import ug.joshh.animal.*<br>  &emsp;&emsp;&emsp;&emsp;//danger: conflicts for multiple packages with same class</li>
+<li><strong>Creating a Package</strong><br>  1. Put the package name at the top of each file<br>  2. Store the file in the folder that has the appropriate folder name.<br>  &emsp;&emsp;e.g. ug.joshh.animal =&gt; ug/joshh/animal folder<ul>
+<li><strong>Create a Package in IntelliJ</strong><br>  File -&gt; New Package -&gt; choose package name</li>
+<li><strong>Add New Java Files to a Package in IntelliJ</strong><br>  Right-click package name -&gt; New -&gt; Java Class </li>
+<li><strong>Add Old Java Files to a Package in IntelliJ</strong><br>  Add “package [name]” to the top of file -&gt; move .java file into folder</li>
+</ul>
+</li>
+<li><strong>Default Packages – class with no package name at the top</strong></li>
+</ul>
+</li>
+<li><strong>JAR Files</strong><br>  Zip all files by creating a JAR file (contain all .class file with additional info)<br>  JAR file is not safe =&gt; possible to unzip back into .java files<ul>
+<li><strong>Creating a JAR File in IntelliJ</strong><br>1. File -&gt; Project Structure -&gt; Artifacts -&gt; JAR -&gt; “From modules with dependencies”<br>2. Ok multiple times<br>3. Build -&gt; Build Artifacts (create a JAR file in a folder called “Artifacts”)</li>
+<li><strong>Build Systems</strong> – Automate the setting up of project structure<br>  Maven, Ant, Gradle</li>
+<li><strong>Access Control</strong><br>  <strong>Package Private (black box)</strong><br>  &emsp;&emsp;default access given to Java memebers without explicit modifier<br>  &emsp;&emsp;accessible between the same package (including default package)<br>  <strong>Public</strong><br>  &emsp;&emsp;Signature should not change once deployed, if developers want to &emsp;&emsp;cancel public things, they call it <strong><em>deprecated</em></strong><br>  <strong>Subtleties</strong><br>  &emsp;&emsp;<strong>Access is based only on static type</strong><br>  &emsp;&emsp;Default access mode for Interface is public not package private</li>
+</ul>
+</li>
+</ul>
+<p><img src="/2019/07/07/CS61B-4/1.3.png" alt="uncaught exception"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> universe;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">HasHair</span> <span class="keyword">implements</span> <span class="title">BlackHole</span> </span>&#123;</span><br><span class="line">    Object[] items;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(Object o)</span> </span>&#123; ... &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">get</span><span class="params">(<span class="keyword">int</span> k)</span> </span>&#123; ... &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="keyword">static</span> CreationUtils.hirsute;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Client</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">demoAccess</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        BlackHole b = hirsute();</span><br><span class="line">        HasHair hb = (HasHair) b; </span><br><span class="line">        <span class="comment">// HasHair is package private, this package does not see the existence of HasHair</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<p>Reference:<br>&emsp;<a href="https://joshhug.gitbooks.io/hug61b/content" target="_blank" rel="noopener">berkeyley-cs61b</a></p>
 
       
     </div>
@@ -385,6 +530,30 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Autoboxing/" rel="tag"># Autoboxing</a>
+          
+            <a href="/tags/Widening/" rel="tag"># Widening</a>
+          
+            <a href="/tags/Immutability/" rel="tag"># Immutability</a>
+          
+            <a href="/tags/Generic-Method/" rel="tag"># Generic Method</a>
+          
+            <a href="/tags/Type-Upper-Bounds/" rel="tag"># Type Upper Bounds</a>
+          
+            <a href="/tags/Exception/" rel="tag"># Exception</a>
+          
+            <a href="/tags/Iteration/" rel="tag"># Iteration</a>
+          
+            <a href="/tags/Object-Class/" rel="tag"># Object Class</a>
+          
+            <a href="/tags/Package/" rel="tag"># Package</a>
+          
+            <a href="/tags/Access-Control/" rel="tag"># Access Control</a>
+          
+        </div>
+      
 
       
       
@@ -394,8 +563,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/29/CS61B-8/" rel="next" title="CS61B-8:Hashing, Heap, Priority Queue">
-                <i class="fa fa-chevron-left"></i> CS61B-8:Hashing, Heap, Priority Queue
+              <a href="/2019/07/07/CS61B-3/" rel="next" title="CS61B-3:Testing, Inheritance, Interface, Extends, Comparable, Comparator, ADTs, Abstract Class">
+                <i class="fa fa-chevron-left"></i> CS61B-3:Testing, Inheritance, Interface, Extends, Comparable, Comparator, ADTs, Abstract Class
               </a>
             
           </div>
@@ -404,8 +573,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/08/27/ConcurrentModificationException/" rel="prev" title="ConcurrentModificationException">
-                ConcurrentModificationException <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/16/LeetCode-Dynamic-Programming/" rel="prev" title="LeetCode-Dynamic Programming">
+                LeetCode-Dynamic Programming <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -458,8 +627,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -544,6 +722,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Generics-and-Autoboxing"><span class="nav-number">1.</span> <span class="nav-text">Generics and Autoboxing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exceptions"><span class="nav-number">2.</span> <span class="nav-text">Exceptions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Iteration"><span class="nav-number">3.</span> <span class="nav-text">Iteration</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Object-Methods"><span class="nav-number">4.</span> <span class="nav-text">Object Methods</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Packages-and-Access-Control"><span class="nav-number">5.</span> <span class="nav-text">Packages and Access Control</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

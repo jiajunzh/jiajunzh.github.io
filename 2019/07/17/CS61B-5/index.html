@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hashing,Heap,Priority Queue,">
+  <meta name="keywords" content="Asymptotics,Binary Search,Amortized Analysis,">
 
 
 
@@ -81,24 +81,23 @@
 
 
 
-<meta name="description" content="Hashing Issue with the Former Data Structure  1. Items need to be comparable  2. Can do better than θ(logN) Data Indexed Integer Set  Improve complexity from θ(logN) to θ(1)">
-<meta name="keywords" content="Hashing,Heap,Priority Queue">
+<meta name="description" content="Efficient Programming Efficiency Programming Cost  Develop programs  Read, modify and maintain code Execution cost  Time Complexity  Space Complexity">
+<meta name="keywords" content="Asymptotics,Binary Search,Amortized Analysis">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CS61B-8:Hashing, Heap, Priority Queue">
-<meta property="og:url" content="http://yoursite.com/2019/07/30/CS61B-8/index.html">
+<meta property="og:title" content="CS61B-5:Asymptotics, Binary Search, Amortized Analysis">
+<meta property="og:url" content="http://yoursite.com/2019/07/17/CS61B-5/index.html">
 <meta property="og:site_name" content="Bazinga!">
-<meta property="og:description" content="Hashing Issue with the Former Data Structure  1. Items need to be comparable  2. Can do better than θ(logN) Data Indexed Integer Set  Improve complexity from θ(logN) to θ(1)">
+<meta property="og:description" content="Efficient Programming Efficiency Programming Cost  Develop programs  Read, modify and maintain code Execution cost  Time Complexity  Space Complexity">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/2019/07/30/CS61B-8/1.1.png">
-<meta property="og:image" content="http://yoursite.com/2019/07/30/CS61B-8/1.2.png">
-<meta property="og:image" content="http://yoursite.com/2019/07/30/CS61B-8/1.3.png">
-<meta property="og:image" content="http://yoursite.com/2019/07/30/CS61B-8/1.4.png">
-<meta property="og:image" content="http://yoursite.com/2019/07/30/CS61B-8/1.5.png">
-<meta property="og:updated_time" content="2019-08-05T03:16:22.136Z">
+<meta property="og:image" content="http://yoursite.com/2019/07/17/CS61B-5/1.1.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/17/CS61B-5/1.2.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/17/CS61B-5/1.3.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/17/CS61B-5/1.4.png">
+<meta property="og:updated_time" content="2019-07-29T08:42:11.465Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CS61B-8:Hashing, Heap, Priority Queue">
-<meta name="twitter:description" content="Hashing Issue with the Former Data Structure  1. Items need to be comparable  2. Can do better than θ(logN) Data Indexed Integer Set  Improve complexity from θ(logN) to θ(1)">
-<meta name="twitter:image" content="http://yoursite.com/2019/07/30/CS61B-8/1.1.png">
+<meta name="twitter:title" content="CS61B-5:Asymptotics, Binary Search, Amortized Analysis">
+<meta name="twitter:description" content="Efficient Programming Efficiency Programming Cost  Develop programs  Read, modify and maintain code Execution cost  Time Complexity  Space Complexity">
+<meta name="twitter:image" content="http://yoursite.com/2019/07/17/CS61B-5/1.1.png">
 
 
 
@@ -128,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/30/CS61B-8/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/17/CS61B-5/">
 
 
 
 
 
-  <title>CS61B-8:Hashing, Heap, Priority Queue | Bazinga!</title>
+  <title>CS61B-5:Asymptotics, Binary Search, Amortized Analysis | Bazinga!</title>
   
 
 
@@ -297,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/30/CS61B-8/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/17/CS61B-5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Blue DogHair">
@@ -314,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CS61B-8:Hashing, Heap, Priority Queue</h1>
+          <h1 class="post-title" itemprop="name headline">CS61B-5:Asymptotics, Binary Search, Amortized Analysis</h1>
         
 
         <div class="post-meta">
@@ -326,8 +325,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-30T04:43:53+08:00">
-                2019-07-29
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-17T17:19:15-04:00">
+                2019-07-17
               </time>
             
 
@@ -342,8 +341,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-08-05T11:16:22+08:00">
-                2019-08-04
+              <time title="Post modified" itemprop="dateModified" datetime="2019-07-29T04:42:11-04:00">
+                2019-07-29
               </time>
             
           </span>
@@ -409,83 +408,73 @@
       
 
       
-        <h3 id="Hashing"><a href="#Hashing" class="headerlink" title="Hashing"></a>Hashing</h3><ul>
-<li><strong>Issue with the Former Data Structure</strong><br>  1. Items need to be comparable<br>  2. Can do better than θ(logN)</li>
-<li><strong>Data Indexed Integer Set</strong><br>  Improve complexity from θ(logN) to θ(1)  <a id="more"></a>
-<ul>
-<li><strong>Implementation</strong><br>  Constructor: large ArrayList of type boolean<br>  add(int x): set x position to true<br>  contains(int x) return whether x position is true</li>
-<li><strong>potential issues</strong><br>  ☑️wasteful space<br>  ☑️insertions of other type</li>
+        <h3 id="Efficient-Programming"><a href="#Efficient-Programming" class="headerlink" title="Efficient Programming"></a>Efficient Programming</h3><ul>
+<li><strong>Efficiency</strong><ul>
+<li><strong>Programming Cost</strong><br>  Develop programs<br>  Read, modify and maintain code</li>
+<li><strong>Execution cost</strong><br>  Time Complexity<br>  Space Complexity  <a id="more"></a></li>
 </ul>
 </li>
-<li><strong>Data Indexed Word Set</strong><ul>
-<li><strong>Big Idea</strong><br>  String =(map)=&gt; some Integer =&gt; Data Indexed Integer Set</li>
-<li><strong>App #1 - Use the first letter</strong><br>  Collision: two different inputs mapped to the same one </li>
-<li><strong>App #2 – Avoiding Collisions</strong><br>  String to unique Base26 Integers<br>  &emsp;&emsp;e.g. “cat” = 3*26*26 + 1*26 + 20*1 = 2074<br>  ☑️Still wasteful of memory<br>  ☑️Overflow if support Strings beyond single English words</li>
+<li><strong>Encapsulation</strong><br>  <strong>Module</strong> – set of methods performing some tasks<br>  <strong>Encapsulated</strong> – implementation completely hidden, Accessed by APIs</li>
+<li><strong>APIs (Application Programming Interface)</strong><br>  The list of constructors and methods and a short description of each<br>  Syntactic (syntax) and semantic (test) specification        </li>
+<li><strong>ADTs (Abstract Data Structures)</strong><br>  High - level types defined by behaviors, not implementations<br>  <strong>Extension vs. Delegation</strong><br>  &emsp;<strong>Extension</strong> – extends class (when know implementation of parent class)<br>  &emsp;&emsp;e.g. Stack extends LinkedList<br>  &emsp;<strong>Delegation</strong> – pass object in another class and use its methods<br>  &emsp;&emsp;e.g. instantiate or pass a LinkedList into Stack class</li>
 </ul>
-</li>
-<li><strong>Hash Codes - Take an object and convert it into some integer</strong> <ul>
-<li><strong>App #1 - Default .hashCode() method using memory address of object</strong></li>
-<li><strong>App #2 - Write our own hashcode method</strong></li>
-<li><strong>Properties of HashCodes</strong><br>  1. Must be an integer<br>  2. .hashCode() return the same number each time<br>  3. Two objects that are .equal() must have the same hash code<br>  Good hashCode distribute items evenly</li>
+<hr>
+<h3 id="Measuring-Computational-Cost"><a href="#Measuring-Computational-Cost" class="headerlink" title="Measuring Computational Cost"></a>Measuring Computational Cost</h3><ul>
+<li><strong>Approaches</strong><br>App #1: measure execution time in seconds using a client program<br>App #2A: count possible operations for array size N = 1000<br>App #2B: count possible operations for array size N (symbolic counts)</li>
+<li><strong>Asymptotic behavior</strong><br>Well-scaling algorithms have better asymptotic runtime behavior<br>Order of growth == shape of graph</li>
+<li><strong>Simplifications</strong><br>#1: Consider only the Worst Case<br>#2: Restrict Attention to One Operation (Representative) – cost model<br>#3: Eliminate Lower Order Terms<br>#4: Eliminate Multiplicative Constants</li>
 </ul>
+<hr>
+<h3 id="Binary-Search-require-list-to-be-in-sorted-order"><a href="#Binary-Search-require-list-to-be-in-sorted-order" class="headerlink" title="Binary Search (require list to be in sorted order)"></a>Binary Search (require list to be in sorted order)</h3><ul>
+<li><strong>Algorithm</strong><br>  Problem: Find a key in a sorted array<br>  1.Compare key against middle entry<br>  2.key is smaller =&gt; left // bigger =&gt; right // equal =&gt; find key</li>
+<li><strong>RunTime</strong><br>  problem size halves over and over till it gets down to 1<br>  Worst case =&gt; key is not in the list at all =&gt; Log(N)</li>
+<li><strong>Exact Count Analysis</strong><br>  C(N) = floor(log2(N)) + 1    </li>
+<li><strong>One Tiny Bug</strong><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mid = (low + high) / <span class="number">2</span>  <span class="comment">// can cause overflow</span></span><br><span class="line">mid = low + (high - low) / <span class="number">2</span>  <span class="comment">// no overflow</span></span><br></pre></td></tr></table></figure>
+
 </li>
-<li><strong>Collision Handling</strong> <ul>
-<li>Solution: array contain a LinkedList of items instead of just items</li>
-<li><strong>Implementation</strong><ul>
-<li>Nothing at index<br>  create a new LinkedList, place it and add new item</li>
-<li>Index Already taken<br>  simply add item to list<br>  No duplicate keys =&gt; must check if key exist already<br>  Insert to the end of list =&gt; have to check all the elements anyways</li>
 </ul>
-</li>
-<li><strong>Workflow</strong><ul>
-<li><strong>add item</strong><br>  get hashcode of item<br>  if index has no item =&gt; create new list and place item there<br>  if already a list =&gt; check if the key exists and add item to list </li>
-<li><strong>contains item</strong><br>  get hashcode of item<br>  if index is empty =&gt; flase<br>  otherwise, check all items in the list at that index</li>
-</ul>
-</li>
-<li><strong>Runtime complexity of worst case</strong><br>  contains - θ(Q): have to look at all items in list<br>  add - θ(Q): have to make sure the item not in the list yet</li>
-<li><strong>Space solving</strong><br>  Modulo – hashcode % size of ArrayList<br>  LinkedList expected to be longer</li>
-</ul>
-</li>
-<li><strong>HashTable</strong><ul>
-<li><strong>Workflow</strong><br>  Input =&gt; hashcode =&gt; modulus to get index</li>
-<li><strong>Dynamically growing our hashtable</strong><br>  M buckets and N items =&gt; Load Factor L = N/M<ul>
-<li><strong>Solution – Set load factor threshold</strong><br>  Create a new HashTable with 2M buckets<br>  Iterate thru all items in the old HashTable, add them into new HashTable<br>  (modulus changes =&gt; may into different buckets)</li>
-<li><strong>Runtime Complexity</strong><br>  <strong>add and contains</strong><br>  &emsp;&emsp;θ(L)= θ(1) =&gt; assuming items evenly distributed<br>  <strong>Resizing</strong><br>  &emsp;&emsp;Already know no duplicates =&gt; add to the front of LinkedList<br>  &emsp;&emsp;Overall θ(N) =&gt; each items need θ(1)</li>
-</ul>
-</li>
-<li><strong>Improve our hashcodes</strong><br>  Giving random values for different items =&gt; evenly distributed<ul>
-<li><strong>Strategies</strong><br>  Use a base strategy in which the base is a prime<br>  ☑️Too small =&gt; String with small length spread within small ranges<br>  ☑️Too big =&gt; Caused by collision due to overflow<br>  &emsp;&emsp;e.g. base126 (string with same last 32 chars =&gt; same hashcode)</li>
-</ul>
-</li>
+<hr>
+<h3 id="Merge-Sort"><a href="#Merge-Sort" class="headerlink" title="Merge Sort"></a>Merge Sort</h3><ul>
+<li><strong>AU (Arbitrary Units of Time)</strong></li>
+<li><strong>Merging Operation – combine two sorted arrays into a big sorted array</strong><br>  Put the min(arr1, arr2) to the start and repeat<br>  Runtime  ⊖(N)</li>
+<li><strong>First Thought</strong><br>Selection Sort of N = 64: ~2048 AU<br>SS (half) and Merge of N = 64: ~(512 * 2 + 64)<br>The latter is faster but still ⊖(N)</li>
+<li><strong>Merge Sort</strong> <ul>
+<li><strong>Algorithm</strong><br>Halves until list size is 1 (no need for SS due to size 1)<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">mergeSort(array) &#123;</span><br><span class="line">    If (size == <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125; </span><br><span class="line">    mergeSort(array.leftHalf);</span><br><span class="line">    mergeSort(array.rightHalf);</span><br><span class="line">    merge(array.leftHalf, array.rightHalf);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line">    </span><br></pre></td></tr></table></figure></li>
+<li><strong>Runtime Analysis</strong><br>Each layer takes N AU<br>The number of layer is k = log2(N)<br>The overall runtime in the worst case is ⊖(N*logN)</li>
 </ul>
 </li>
 </ul>
 <hr>
-<h3 id="Heaps-and-Priority-Queue"><a href="#Heaps-and-Priority-Queue" class="headerlink" title="Heaps and Priority Queue"></a>Heaps and Priority Queue</h3><ul>
-<li><p><strong>Priority Queue Interface</strong><br>Quickly find the smallest or largest item<br>Space/memory benefits to using PQ =&gt; if only need the top N</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/** (Min) Priority Queue: Allowing tracking and removal of </span></span><br><span class="line"><span class="comment">  * the smallest item in a priority queue. */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">MinPQ</span>&lt;<span class="title">Item</span>&gt; </span>&#123;</span><br><span class="line">    <span class="comment">/** Adds the item to the priority queue. */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(Item x)</span></span>;</span><br><span class="line">    <span class="comment">/** Returns the smallest item in the priority queue. */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Item <span class="title">getSmallest</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="comment">/** Removes the smallest item from the priority queue. */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Item <span class="title">removeSmallest</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="comment">/** Returns the size of the priority queue. */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">size</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>Heaps</strong></p>
-<ul>
-<li><strong>Min-heap Definition</strong><br> <strong><em>Min-heap property:</em></strong> each node &lt;= its children<br>  <strong><em>Complete:</em></strong> missing item only at bottom level, all nodes as left as possible</li>
-<li><strong>Heap Operations</strong><ul>
-<li>add: add to then end of the heap temporarily. Swim up to the proper place.</li>
-<li>getSmallest: return the root of the heap</li>
-<li>removeSmallest: Swap the last item in the heap into the root. Sink down to the proper place</li>
+<h3 id="Big-Theta-Big-O-and-Big-Omega"><a href="#Big-Theta-Big-O-and-Big-Omega" class="headerlink" title="Big Theta, Big O and Big Omega"></a>Big Theta, Big O and Big Omega</h3><ul>
+<li><strong>Big Theta – representing the families =&gt; order of growth</strong><br>Both upper and lower bounded =&gt; runtime equality</li>
+<li><strong>Big O – upper bound =&gt; less than or equal</strong><ul>
+<li><strong>Why useful?</strong><br>1. If the runtime depends on more than N<br>&emsp;&emsp;=&gt; must qualify statement before using big theta<br>2. for tricky problems, cannot know exact runtime<br>&emsp;&emsp;=&gt; give upper bound<br>3. easier to write proofs than big theta</li>
+<li><strong>Big O abuse</strong><br>The worst case runtime is ⊖(N^2) =&gt; provide more information<br>The runtime is O(N^2) =&gt; avoid qualifying statements<br>Big O is NOT the same as worst case</li>
 </ul>
 </li>
-<li><strong>Tree Representation of Heap</strong><ul>
-<li>App #1a: Fixed-Width node =&gt; pointers to Children<br>&emsp;<br><img src="/2019/07/30/CS61B-8/1.1.png" alt></li>
-<li>App #1b: Variable-Width =&gt; use of array<br>&emsp;<br><img src="/2019/07/30/CS61B-8/1.2.png" alt></li>
-<li>App #1c: Variable-Width =&gt; reference to siblings<br>&emsp;<br><img src="/2019/07/30/CS61B-8/1.3.png" alt></li>
-<li>App #2: Store a key and a parent array<br>Tree is complete<br>parent array is redundant<br>The order of reading the key array is the same as the level-order<br>&emsp;<br><img src="/2019/07/30/CS61B-8/1.4.png" alt></li>
-<li>App #3: Represent by level order in an array<br>Implementation of Heap<br>leftChild(k) = k * 2,  rightChild(k) = k * 2 + 1,  parent(k) = k / 2<br>&emsp;<br><img src="/2019/07/30/CS61B-8/1.5.png" alt></li>
+<li><strong>Big Omega – lower bound =&gt; greater than or equal</strong><ul>
+<li><strong>Use of Big Omega</strong><br>1.Prove Big Theta. R(N)= O(f(N))= Ω(f(N)) =&gt; R(N)= ⊖(f(N))<br>2.Prove difficulty of problems. E.g. dup-finding algorithm must be Ω(N)</li>
 </ul>
 </li>
+<li><strong>Summary</strong><br><img src="/2019/07/17/CS61B-5/1.1.png" alt="Big Theta, Big O and Big Omega"></li>
+</ul>
+<hr>
+<h3 id="Amortized-Analysis-Preview"><a href="#Amortized-Analysis-Preview" class="headerlink" title="Amortized Analysis Preview"></a>Amortized Analysis Preview</h3><ul>
+<li><strong>Grigometh’s Tribute</strong><ul>
+<li><strong>Two Payments</strong><br>Choice#1: eat 3 bushels of hay each day<br>Choice#2: eat exponentially more hay but come exponentially less often<br>&emsp;&emsp;Day1, eat 1 bushel of hay (total 1)<br>&emsp;&emsp;Day2, eat 2 bushel of hay (total 3)<br>&emsp;&emsp;Day4, eat 4 bushel of hay (total 7)<br>Payment: putting 3 bushels of hay each day satisfies both.<br>Choice#2 is as <strong>amortized constant</strong> hay consumption</li>
 </ul>
 </li>
-<li><p><strong>Performance Analysis</strong><br>  add - θ(log⁡N )<br>  getSmallest - θ(1)<br>  removeSmallest - θ(logN)<br>  Also solve the problem of duplicate elements<br>  Heap operations are amortized =&gt; resizing<br>  Array-based heaps take arount 1/3rd the memory as App #1a</p>
+<li><strong>AList Resizing and Amortization</strong><br>  Geometric resizing is similar to Grigometh’s tribute<br>  Most add operations are cheap while some are expensive<br>  On average, the runtime of add is ⊖(1)</li>
+</ul>
+<p><img src="/2019/07/17/CS61B-5/1.2.png" alt="Amortized Analysis"></p>
+<hr>
+<h3 id="Amortized-Analysis"><a href="#Amortized-Analysis" class="headerlink" title="Amortized Analysis"></a>Amortized Analysis</h3><ul>
+<li><p><strong>Steps of Amortized Analysis</strong><br>1. Pick a cost model<br>2. Compute the average cost of ith operation<br>3. Show that average cost is bounded by a constant</p>
 </li>
-<li><p><strong>Remaining issues</strong><br>  1. How to order the items (comparator)<br>  2. How to make MinPQ into MaxPQ</p>
+<li><p><strong>Example – Geometric Resizing</strong><br><img src="/2019/07/17/CS61B-5/1.3.png" alt="Amortized Analysis"></p>
+</li>
+<li><p><strong>Potential $ϕ_i= ϕ_{i-1}+a_i-c_i$</strong><br>☑️Initial potential be 0<br>☑️Can take $a_i$ as <strong>deposit</strong> and $c_i$ as <strong>withdrawal</strong><br>☑️If we can choose constant $a_i$ such that $ϕ_i$ is never negative, then the amortized cost is an upper bound on the true cost =&gt; average constant time<br><img src="/2019/07/17/CS61B-5/1.4.png" alt="Amortized Analysis"></p>
+<p>Reference:<br>&emsp;<a href="https://joshhug.gitbooks.io/hug61b/content" target="_blank" rel="noopener">berkeyley-cs61b</a></p>
 </li>
 </ul>
 
@@ -505,11 +494,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hashing/" rel="tag"># Hashing</a>
+            <a href="/tags/Asymptotics/" rel="tag"># Asymptotics</a>
           
-            <a href="/tags/Heap/" rel="tag"># Heap</a>
+            <a href="/tags/Binary-Search/" rel="tag"># Binary Search</a>
           
-            <a href="/tags/Priority-Queue/" rel="tag"># Priority Queue</a>
+            <a href="/tags/Amortized-Analysis/" rel="tag"># Amortized Analysis</a>
           
         </div>
       
@@ -522,8 +511,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/29/CS61B-7/" rel="next" title="CS61B-7:Balanced Search Tree, B-Tree, Rotating Tree, Red-Black Tree">
-                <i class="fa fa-chevron-left"></i> CS61B-7:Balanced Search Tree, B-Tree, Rotating Tree, Red-Black Tree
+              <a href="/2019/07/16/LeetCode-Dynamic-Programming/" rel="next" title="LeetCode-Dynamic Programming">
+                <i class="fa fa-chevron-left"></i> LeetCode-Dynamic Programming
               </a>
             
           </div>
@@ -532,8 +521,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/08/05/CS61B-9/" rel="prev" title="CS61B-9">
-                CS61B-9 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/20/CS61B-6/" rel="prev" title="CS61B-6:Disjoint Set, Binary Search Tree">
+                CS61B-6:Disjoint Set, Binary Search Tree <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -603,7 +592,7 @@
               <img class="site-author-image" itemprop="image" src="/images/head.jpeg" alt="Blue DogHair">
             
               <p class="site-author-name" itemprop="name">Blue DogHair</p>
-              <p class="site-description motion-element" itemprop="description">A Programmer Who Wants A Stupid Dog ╮(￣▽ ￣)╭</p>
+              <p class="site-description motion-element" itemprop="description">I like Sleep !</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -613,7 +602,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -624,7 +613,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -635,7 +624,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">46</span>
+                  <span class="site-state-item-count">48</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -691,7 +680,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hashing"><span class="nav-number">1.</span> <span class="nav-text">Hashing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Heaps-and-Priority-Queue"><span class="nav-number">2.</span> <span class="nav-text">Heaps and Priority Queue</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Efficient-Programming"><span class="nav-number">1.</span> <span class="nav-text">Efficient Programming</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Measuring-Computational-Cost"><span class="nav-number">2.</span> <span class="nav-text">Measuring Computational Cost</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Binary-Search-require-list-to-be-in-sorted-order"><span class="nav-number">3.</span> <span class="nav-text">Binary Search (require list to be in sorted order)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Merge-Sort"><span class="nav-number">4.</span> <span class="nav-text">Merge Sort</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Big-Theta-Big-O-and-Big-Omega"><span class="nav-number">5.</span> <span class="nav-text">Big Theta, Big O and Big Omega</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Amortized-Analysis-Preview"><span class="nav-number">6.</span> <span class="nav-text">Amortized Analysis Preview</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Amortized-Analysis"><span class="nav-number">7.</span> <span class="nav-text">Amortized Analysis</span></a></li></ol></div>
             
 
           </div>

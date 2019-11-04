@@ -85,19 +85,19 @@
 <meta name="keywords" content="Dynamic Programming,Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Dynamic Programming">
-<meta property="og:url" content="http://yoursite.com/2019/07/08/Dynamic-Programming/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/07/07/Dynamic-Programming/index.html">
 <meta property="og:site_name" content="Bazinga!">
 <meta property="og:description" content="Those who cannot  remember the past are condemned to repeat it.   Starting From Fibonacci NumberFibonacci Number is a series of number satisfying $F(n) = F(n - 1) + F(n - 2)$, for examaple, {0, 1, 1,">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/2019/07/08/Dynamic-Programming/1.1.png">
-<meta property="og:image" content="http://yoursite.com/2019/07/08/Dynamic-Programming/1.2.png">
-<meta property="og:image" content="http://yoursite.com/2019/07/08/Dynamic-Programming/1.3.png">
-<meta property="og:image" content="http://yoursite.com/2019/07/08/Dynamic-Programming/1.4.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/07/Dynamic-Programming/1.1.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/07/Dynamic-Programming/1.2.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/07/Dynamic-Programming/1.3.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/07/Dynamic-Programming/1.4.png">
 <meta property="og:updated_time" content="2019-07-31T15:18:41.819Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Dynamic Programming">
 <meta name="twitter:description" content="Those who cannot  remember the past are condemned to repeat it.   Starting From Fibonacci NumberFibonacci Number is a series of number satisfying $F(n) = F(n - 1) + F(n - 2)$, for examaple, {0, 1, 1,">
-<meta name="twitter:image" content="http://yoursite.com/2019/07/08/Dynamic-Programming/1.1.png">
+<meta name="twitter:image" content="http://yoursite.com/2019/07/07/Dynamic-Programming/1.1.png">
 
 
 
@@ -127,7 +127,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/08/Dynamic-Programming/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/07/Dynamic-Programming/">
 
 
 
@@ -296,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/08/Dynamic-Programming/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/07/Dynamic-Programming/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Blue DogHair">
@@ -325,7 +325,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-08T01:26:21+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-07T13:26:21-04:00">
                 2019-07-07
               </time>
             
@@ -341,7 +341,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-07-31T23:18:41+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2019-07-31T11:18:41-04:00">
                 2019-07-31
               </time>
             
@@ -416,7 +416,7 @@
 
 <p>So, why is that ?</p>
 <p>Let’s think about the structure of the call tree. Each fibonacci number relies on the computing of the other two fibonacci number ahead of it. The image before shows the call tree when you get the input as 6 and it is not hard to realize that the tree will have $2^n$ nodes in total with the depth n.</p>
-<p><img src="/2019/07/08/Dynamic-Programming/1.1.png" alt="Call Tree with fib(6)"></p>
+<p><img src="/2019/07/07/Dynamic-Programming/1.1.png" alt="Call Tree with fib(6)"></p>
 <p>The essence of the inefficiency of this approach lies in that we can compute the same fibonacci number (e.g. fib(3) for 3 times) for multiple times which is totally unnecessary. So here is where the <strong>Memoization</strong> comes in to resue.</p>
 <hr>
 <h3 id="Top-Down-Memoization"><a href="#Top-Down-Memoization" class="headerlink" title="Top-Down Memoization"></a>Top-Down Memoization</h3><p>As we have seen the above case, the issue is that the subproblems of the whole problem overlap in some parts leading to ineffecient and unnecessary recalculation. Then how to fix it ?  Well, it is quite simple, we trade space with time by keeping a table to record the work you’ve done and you can just return the answer if the subproblem has already been done once. That is roughly the basic idea of <strong>Memoization</strong>.</p>
@@ -429,12 +429,12 @@
 <blockquote><p>Calculate the total number of possible path to the destination in the image</p>
 </blockquote>
 
-<p><img src="/2019/07/08/Dynamic-Programming/1.2.png" alt="Count Path"></p>
+<p><img src="/2019/07/07/Dynamic-Programming/1.2.png" alt="Count Path"></p>
 <h4 id="Divide-the-Problem-Recursively"><a href="#Divide-the-Problem-Recursively" class="headerlink" title="Divide the Problem Recursively"></a>Divide the Problem Recursively</h4><p>To analyze this problem, the green guy can simply walk downwards or to the right (you know, it will be stupid to turn back (i.e. to the left and upwards)).  Thus, we can divide this problem as separate steps along path as below.<br>&emsp;&emsp;&emsp;$Path(start, end) = Path(A, end) + Path(B, end) = …$</p>
-<p><img src="/2019/07/08/Dynamic-Programming/1.3.png" alt="Count Path"></p>
+<p><img src="/2019/07/07/Dynamic-Programming/1.3.png" alt="Count Path"></p>
 <h4 id="Memoization-vs-Recursion"><a href="#Memoization-vs-Recursion" class="headerlink" title="Memoization vs. Recursion"></a>Memoization vs. Recursion</h4><p>We can see from the image above that Path(C, end) will be calculated twice and so are others, which is fairly inefficient. That is because there are overlapping between some subproblems. Thus we can take the Memoization approach to make sure each subproblem solved only once. To do this, we can use a table to record the total number of paths from a specific point to the end.</p>
 <h4 id="Start-by-the-Most-Trivial-Problem"><a href="#Start-by-the-Most-Trivial-Problem" class="headerlink" title="Start by the Most Trivial Problem"></a>Start by the Most Trivial Problem</h4><p>Dynamic Programming solves problem from down to top. This idea applies here as well. Instead of starting from the start point, we can think of this problem from the end point backwards.<br>&emsp;&emsp;&emsp;$Path(P, end) = Path(P’s\ right, end) + Path(P’s\ down, end)$<br>Thus, we can compute the whole table from the right to left and then down to up.</p>
-<p><img src="/2019/07/08/Dynamic-Programming/1.4.png" alt="Count Path"></p>
+<p><img src="/2019/07/07/Dynamic-Programming/1.4.png" alt="Count Path"></p>
 <hr>
 <h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p>In a nutshell, dynamic programming is suitable for the situation where you can divide problem into sub-problems which can be broken down to smaller sub-problems and there is overlapping in solving the sub-problems. It is efficient by only computing the overlapping part once.</p>
 <p>Basically, optimization and combinatorial problems are of the two most typical problem of dynamic programming problems. The optimization problem requires you to find a feasible solution so that the objective function can be optimized while the combinatorial problems want you to compute the number of ways to do something or possibility of some event happening.</p>
@@ -484,7 +484,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/08/CS61B-3/" rel="prev" title="CS61B-3:Testing, Inheritance, Interface, Extends, Comparable, Comparator, ADTs, Abstract Class">
+              <a href="/2019/07/07/CS61B-3/" rel="prev" title="CS61B-3:Testing, Inheritance, Interface, Extends, Comparable, Comparator, ADTs, Abstract Class">
                 CS61B-3:Testing, Inheritance, Interface, Extends, Comparable, Comparator, ADTs, Abstract Class <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -555,7 +555,7 @@
               <img class="site-author-image" itemprop="image" src="/images/head.jpeg" alt="Blue DogHair">
             
               <p class="site-author-name" itemprop="name">Blue DogHair</p>
-              <p class="site-description motion-element" itemprop="description">A Programmer Who Wants A Stupid Dog ╮(￣▽ ￣)╭</p>
+              <p class="site-description motion-element" itemprop="description">I like Sleep !</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -565,7 +565,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -576,7 +576,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -587,7 +587,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">46</span>
+                  <span class="site-state-item-count">48</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>

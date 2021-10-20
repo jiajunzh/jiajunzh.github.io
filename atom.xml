@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-10-16T18:51:53.592Z</updated>
+  <updated>2021-10-20T03:04:56.544Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,15 +17,15 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Driving Runbook</title>
+    <title>Road Test Runbook</title>
     <link href="http://yoursite.com/2021/10/12/Driving-Runbook/"/>
     <id>http://yoursite.com/2021/10/12/Driving-Runbook/</id>
     <published>2021-10-12T12:37:24.000Z</published>
-    <updated>2021-10-16T18:51:53.592Z</updated>
+    <updated>2021-10-20T03:04:56.544Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Driving-Exam-Overview&quot;&gt;&lt;a href=&quot;#Driving-Exam-Overview&quot; class=&quot;headerlink&quot; title=&quot;Driving Exam Overview&quot;&gt;&lt;/a&gt;Driving Exam Overview&lt;/h1&gt;&lt;ul&gt;
+      &lt;h1 id=&quot;Road-Test-Overview&quot;&gt;&lt;a href=&quot;#Road-Test-Overview&quot; class=&quot;headerlink&quot; title=&quot;Road Test Overview&quot;&gt;&lt;/a&gt;Road Test Overview&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;Pre-driving Check&lt;/li&gt;
 &lt;li&gt;Critical Errors/Mandatory Failures &lt;/li&gt;
 &lt;li&gt;Vehicle Movement &lt;/li&gt;
@@ -40,7 +40,7 @@
     </summary>
     
     
-      <category term="Driving" scheme="http://yoursite.com/tags/Driving/"/>
+      <category term="Road Test" scheme="http://yoursite.com/tags/Road-Test/"/>
     
   </entry>
   
@@ -78,7 +78,7 @@
     <link href="http://yoursite.com/2021/10/10/Cat-Insurance/"/>
     <id>http://yoursite.com/2021/10/10/Cat-Insurance/</id>
     <published>2021-10-11T01:55:22.000Z</published>
-    <updated>2021-10-19T12:50:11.695Z</updated>
+    <updated>2021-10-20T03:03:16.409Z</updated>
     
     <summary type="html">
     
@@ -90,146 +90,7 @@
     </summary>
     
     
-      <category term="Demo" scheme="http://yoursite.com/tags/Demo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CS61B-9</title>
-    <link href="http://yoursite.com/2019/08/05/CS61B-9/"/>
-    <id>http://yoursite.com/2019/08/05/CS61B-9/</id>
-    <published>2019-08-05T15:18:24.000Z</published>
-    <updated>2019-08-05T04:03:49.685Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;public class TrieSet {&lt;br&gt;    private final int R = 128; // ASCII&lt;br&gt;    private Node root; // root of trie&lt;br&gt;    public static class
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>CS61B-8:Hashing, Heap, Priority Queue</title>
-    <link href="http://yoursite.com/2019/07/29/CS61B-8/"/>
-    <id>http://yoursite.com/2019/07/29/CS61B-8/</id>
-    <published>2019-07-29T20:43:53.000Z</published>
-    <updated>2019-08-05T03:16:22.136Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;Hashing&quot;&gt;&lt;a href=&quot;#Hashing&quot; class=&quot;headerlink&quot; title=&quot;Hashing&quot;&gt;&lt;/a&gt;Hashing&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Issue with the Former Data Structure&lt;/strong&gt;&lt;br&gt;  1. Items need to be comparable&lt;br&gt;  2. Can do better than θ(logN)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Data Indexed Integer Set&lt;/strong&gt;&lt;br&gt;  Improve complexity from θ(logN) to θ(1)&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="CS61B" scheme="http://yoursite.com/categories/CS61B/"/>
-    
-      <category term="Lecture Notes" scheme="http://yoursite.com/categories/CS61B/Lecture-Notes/"/>
-    
-    
-      <category term="Hashing" scheme="http://yoursite.com/tags/Hashing/"/>
-    
-      <category term="Heap" scheme="http://yoursite.com/tags/Heap/"/>
-    
-      <category term="Priority Queue" scheme="http://yoursite.com/tags/Priority-Queue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CS61B-7:Balanced Search Tree, B-Tree, Rotating Tree, Red-Black Tree</title>
-    <link href="http://yoursite.com/2019/07/29/CS61B-7/"/>
-    <id>http://yoursite.com/2019/07/29/CS61B-7/</id>
-    <published>2019-07-29T14:38:42.000Z</published>
-    <updated>2019-08-03T03:00:41.678Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;Balanced-Search-Tree-Intro&quot;&gt;&lt;a href=&quot;#Balanced-Search-Tree-Intro&quot; class=&quot;headerlink&quot; title=&quot;Balanced Search Tree Intro&quot;&gt;&lt;/a&gt;Balanced Search Tree Intro&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Runtime: Worst Case vs. Best Case&lt;/strong&gt;&lt;br&gt;  Worst case: θ(N) – spindly tree (equivalently LinkedList)&lt;br&gt;  Best case: θ(logN) (N is number of nodes) – bushy tree&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;BST Performance&lt;/strong&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Terminology&lt;/strong&gt;&lt;br&gt;  Depth – number of links between a node and root&lt;br&gt;  Height – lowest depth of a tree&lt;br&gt;  Average Depth – average of the total depths in the tree&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="CS61B" scheme="http://yoursite.com/categories/CS61B/"/>
-    
-      <category term="Lecture Notes" scheme="http://yoursite.com/categories/CS61B/Lecture-Notes/"/>
-    
-    
-      <category term="Balanced Search Tree" scheme="http://yoursite.com/tags/Balanced-Search-Tree/"/>
-    
-      <category term="B-Tree" scheme="http://yoursite.com/tags/B-Tree/"/>
-    
-      <category term="2-3-4 Tree" scheme="http://yoursite.com/tags/2-3-4-Tree/"/>
-    
-      <category term="2-3 Tree" scheme="http://yoursite.com/tags/2-3-Tree/"/>
-    
-      <category term="Rotating Tree" scheme="http://yoursite.com/tags/Rotating-Tree/"/>
-    
-      <category term="Red-Black Tree" scheme="http://yoursite.com/tags/Red-Black-Tree/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CS61B-6:Disjoint Set, Binary Search Tree</title>
-    <link href="http://yoursite.com/2019/07/20/CS61B-6/"/>
-    <id>http://yoursite.com/2019/07/20/CS61B-6/</id>
-    <published>2019-07-20T23:06:09.000Z</published>
-    <updated>2019-07-29T08:42:04.282Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;Disjoint-Set&quot;&gt;&lt;a href=&quot;#Disjoint-Set&quot; class=&quot;headerlink&quot; title=&quot;Disjoint Set&quot;&gt;&lt;/a&gt;Disjoint Set&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Introduction to Disjoint Set&lt;/strong&gt;&lt;br&gt;  Disjoints sets: two sets having no elements in common&lt;br&gt;  connect(x, y): connect x and y, known as union&lt;br&gt;  isConnect(x, y): returns true if x and y are connected&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="CS61B" scheme="http://yoursite.com/categories/CS61B/"/>
-    
-      <category term="Lecture Notes" scheme="http://yoursite.com/categories/CS61B/Lecture-Notes/"/>
-    
-    
-      <category term="Disjoint Set" scheme="http://yoursite.com/tags/Disjoint-Set/"/>
-    
-      <category term="BST" scheme="http://yoursite.com/tags/BST/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CS61B-5:Asymptotics, Binary Search, Amortized Analysis</title>
-    <link href="http://yoursite.com/2019/07/17/CS61B-5/"/>
-    <id>http://yoursite.com/2019/07/17/CS61B-5/</id>
-    <published>2019-07-17T21:19:15.000Z</published>
-    <updated>2019-07-29T08:42:11.465Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;Efficient-Programming&quot;&gt;&lt;a href=&quot;#Efficient-Programming&quot; class=&quot;headerlink&quot; title=&quot;Efficient Programming&quot;&gt;&lt;/a&gt;Efficient Programming&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Efficiency&lt;/strong&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Programming Cost&lt;/strong&gt;&lt;br&gt;  Develop programs&lt;br&gt;  Read, modify and maintain code&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Execution cost&lt;/strong&gt;&lt;br&gt;  Time Complexity&lt;br&gt;  Space Complexity&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="CS61B" scheme="http://yoursite.com/categories/CS61B/"/>
-    
-      <category term="Lecture Notes" scheme="http://yoursite.com/categories/CS61B/Lecture-Notes/"/>
-    
-    
-      <category term="Asymptotics" scheme="http://yoursite.com/tags/Asymptotics/"/>
-    
-      <category term="Binary Search" scheme="http://yoursite.com/tags/Binary-Search/"/>
-    
-      <category term="Amortized Analysis" scheme="http://yoursite.com/tags/Amortized-Analysis/"/>
+      <category term="CatDemo" scheme="http://yoursite.com/tags/CatDemo/"/>
     
   </entry>
   
@@ -252,85 +113,6 @@
     
     
       <category term="dynamic programming" scheme="http://yoursite.com/tags/dynamic-programming/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CS61B-4:Autoboxing &amp; Widening, Immutability, Generic Methods &amp; Type Upper Bounds, Exception, Iteration, Object Methods, Package &amp; Access Control</title>
-    <link href="http://yoursite.com/2019/07/07/CS61B-4/"/>
-    <id>http://yoursite.com/2019/07/07/CS61B-4/</id>
-    <published>2019-07-08T03:52:14.000Z</published>
-    <updated>2019-07-15T00:42:40.048Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;Generics-and-Autoboxing&quot;&gt;&lt;a href=&quot;#Generics-and-Autoboxing&quot; class=&quot;headerlink&quot; title=&quot;Generics and Autoboxing&quot;&gt;&lt;/a&gt;Generics and Autoboxing&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Automatic Conversions&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Autoboxing and Unboxing&lt;/strong&gt;&lt;br&gt;Cannot provide primitive type as an actual type argument&lt;br&gt;Use corresponding reference type (wrapper classes)&lt;br&gt;Java implicitly convert between primitive and wrapper types&lt;br&gt;Arrays are never auto-boxed or auto-unboxed&lt;br&gt;&amp;emsp;&amp;emsp;e.g. Integer[] x = (int[]) x; (compiler not allowed)&lt;br&gt;autoboxing and unboxing has a measurable performance impact&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="CS61B" scheme="http://yoursite.com/categories/CS61B/"/>
-    
-      <category term="Lecture Notes" scheme="http://yoursite.com/categories/CS61B/Lecture-Notes/"/>
-    
-    
-      <category term="Autoboxing" scheme="http://yoursite.com/tags/Autoboxing/"/>
-    
-      <category term="Widening" scheme="http://yoursite.com/tags/Widening/"/>
-    
-      <category term="Immutability" scheme="http://yoursite.com/tags/Immutability/"/>
-    
-      <category term="Generic Method" scheme="http://yoursite.com/tags/Generic-Method/"/>
-    
-      <category term="Type Upper Bounds" scheme="http://yoursite.com/tags/Type-Upper-Bounds/"/>
-    
-      <category term="Exception" scheme="http://yoursite.com/tags/Exception/"/>
-    
-      <category term="Iteration" scheme="http://yoursite.com/tags/Iteration/"/>
-    
-      <category term="Object Class" scheme="http://yoursite.com/tags/Object-Class/"/>
-    
-      <category term="Package" scheme="http://yoursite.com/tags/Package/"/>
-    
-      <category term="Access Control" scheme="http://yoursite.com/tags/Access-Control/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CS61B-3:Testing, Inheritance, Interface, Extends, Comparable, Comparator, ADTs, Abstract Class</title>
-    <link href="http://yoursite.com/2019/07/07/CS61B-3/"/>
-    <id>http://yoursite.com/2019/07/07/CS61B-3/</id>
-    <published>2019-07-07T23:07:10.000Z</published>
-    <updated>2019-07-18T02:48:40.311Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;Testing&quot;&gt;&lt;a href=&quot;#Testing&quot; class=&quot;headerlink&quot; title=&quot;Testing&quot;&gt;&lt;/a&gt;Testing&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Junit Testing&lt;/strong&gt;&lt;br&gt;Library =&amp;gt; org.junit &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Junit Methods&lt;/strong&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;org.junit.Assert.assertArrayEquals(expected, input);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="CS61B" scheme="http://yoursite.com/categories/CS61B/"/>
-    
-      <category term="Lecture Notes" scheme="http://yoursite.com/categories/CS61B/Lecture-Notes/"/>
-    
-    
-      <category term="Testing" scheme="http://yoursite.com/tags/Testing/"/>
-    
-      <category term="Inheritance" scheme="http://yoursite.com/tags/Inheritance/"/>
-    
-      <category term="Interface" scheme="http://yoursite.com/tags/Interface/"/>
-    
-      <category term="Extends" scheme="http://yoursite.com/tags/Extends/"/>
-    
-      <category term="Comparable, Comparator" scheme="http://yoursite.com/tags/Comparable-Comparator/"/>
-    
-      <category term="ADTs" scheme="http://yoursite.com/tags/ADTs/"/>
-    
-      <category term="Abstract Class" scheme="http://yoursite.com/tags/Abstract-Class/"/>
     
   </entry>
   
@@ -358,112 +140,6 @@
       <category term="Dynamic Programming" scheme="http://yoursite.com/tags/Dynamic-Programming/"/>
     
       <category term="Algorithm" scheme="http://yoursite.com/tags/Algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CS61B-2: Bits, Type, Lists, Sets</title>
-    <link href="http://yoursite.com/2019/07/06/CS61B-2-Bits-Type-Lists/"/>
-    <id>http://yoursite.com/2019/07/06/CS61B-2-Bits-Type-Lists/</id>
-    <published>2019-07-06T15:24:11.000Z</published>
-    <updated>2019-07-06T15:11:08.384Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;&lt;p&gt;Arrays have a fixed size ?&lt;br&gt;Then come Lists !&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;Bits&quot;&gt;&lt;a href=&quot;#Bits&quot; class=&quot;headerlink&quot; title=&quot;Bits&quot;&gt;&lt;/a&gt;Bits&lt;/h3&gt;&lt;blockquote&gt;&lt;p&gt;Memory is stored as a sequence of 0 and 1 and bits Interpreted using types&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Variable Types&lt;/strong&gt;&lt;ul&gt;
-&lt;li&gt;8 primitive types: byte, short, int, long, float, double, char, boolean&lt;/li&gt;
-&lt;li&gt;Reference Types&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="CS61B" scheme="http://yoursite.com/categories/CS61B/"/>
-    
-      <category term="Lecture Notes" scheme="http://yoursite.com/categories/CS61B/Lecture-Notes/"/>
-    
-    
-      <category term="Bits" scheme="http://yoursite.com/tags/Bits/"/>
-    
-      <category term="Type" scheme="http://yoursite.com/tags/Type/"/>
-    
-      <category term="LinkedList" scheme="http://yoursite.com/tags/LinkedList/"/>
-    
-      <category term="ArrayList" scheme="http://yoursite.com/tags/ArrayList/"/>
-    
-      <category term="Set" scheme="http://yoursite.com/tags/Set/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Big Data Analytics</title>
-    <link href="http://yoursite.com/2019/07/06/Big-Data-Analytics/"/>
-    <id>http://yoursite.com/2019/07/06/Big-Data-Analytics/</id>
-    <published>2019-07-06T13:54:21.000Z</published>
-    <updated>2019-07-06T01:59:14.567Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="CC" scheme="http://yoursite.com/categories/CC/"/>
-    
-      <category term="Big Data Analytics" scheme="http://yoursite.com/categories/CC/Big-Data-Analytics/"/>
-    
-    
-      <category term="sequential analytics" scheme="http://yoursite.com/tags/sequential-analytics/"/>
-    
-      <category term="MapReduce" scheme="http://yoursite.com/tags/MapReduce/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CS61B-1:Java Intro, Classes</title>
-    <link href="http://yoursite.com/2019/07/05/CS61B-1-Java-Intro-Classes/"/>
-    <id>http://yoursite.com/2019/07/05/CS61B-1-Java-Intro-Classes/</id>
-    <published>2019-07-05T15:14:00.000Z</published>
-    <updated>2019-07-06T08:13:26.581Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;Running-a-Java-Program&quot;&gt;&lt;a href=&quot;#Running-a-Java-Program&quot; class=&quot;headerlink&quot; title=&quot;Running a Java Program&quot;&gt;&lt;/a&gt;Running a Java Program&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;.java-&amp;gt; javac (compiler) -&amp;gt; .class (Java bytecode) -&amp;gt; java (Interpreter) -&amp;gt; runs&lt;/li&gt;
-&lt;li&gt;.class file&lt;br&gt;  1. safer (type checked)&lt;br&gt;  2. faster (for machine to execute)&lt;br&gt;  3. protect intellectual property&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="CS61B" scheme="http://yoursite.com/categories/CS61B/"/>
-    
-      <category term="Lecture Notes" scheme="http://yoursite.com/categories/CS61B/Lecture-Notes/"/>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
-    
-      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
-    
-      <category term="Data Structure" scheme="http://yoursite.com/tags/Data-Structure/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2019/07/04/hello-world/"/>
-    <id>http://yoursite.com/2019/07/04/hello-world/</id>
-    <published>2019-07-04T14:12:22.171Z</published>
-    <updated>2019-07-04T14:12:22.171Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Others" scheme="http://yoursite.com/categories/Others/"/>
-    
     
   </entry>
   

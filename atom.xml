@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-28T03:25:18.493Z</updated>
+  <updated>2021-10-16T18:51:53.592Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,24 +17,80 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>ConcurrentModificationException</title>
-    <link href="http://yoursite.com/2019/08/27/ConcurrentModificationException/"/>
-    <id>http://yoursite.com/2019/08/27/ConcurrentModificationException/</id>
-    <published>2019-08-27T23:37:29.000Z</published>
-    <updated>2019-08-28T03:25:18.493Z</updated>
+    <title>Driving Runbook</title>
+    <link href="http://yoursite.com/2021/10/12/Driving-Runbook/"/>
+    <id>http://yoursite.com/2021/10/12/Driving-Runbook/</id>
+    <published>2021-10-12T12:37:24.000Z</published>
+    <updated>2021-10-16T18:51:53.592Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;When using enhanced for loop for collections, the collection itself is not allowed to be modified. ConcurrentModificationException will be thrown if it does. The code below is an example of this.&lt;/p&gt;
+      &lt;h1 id=&quot;Driving-Exam-Overview&quot;&gt;&lt;a href=&quot;#Driving-Exam-Overview&quot; class=&quot;headerlink&quot; title=&quot;Driving Exam Overview&quot;&gt;&lt;/a&gt;Driving Exam Overview&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Pre-driving Check&lt;/li&gt;
+&lt;li&gt;Critical Errors/Mandatory Failures &lt;/li&gt;
+&lt;li&gt;Vehicle Movement &lt;/li&gt;
+&lt;li&gt;Parallel Parking &lt;/li&gt;
+&lt;li&gt;Hill Operation &lt;/li&gt;
+&lt;li&gt;Backing 50 Feet&lt;/li&gt;
+&lt;li&gt;Three Point Turn &lt;/li&gt;
+&lt;li&gt;Turning &lt;/li&gt;
+&lt;li&gt;Lane Change/General Driving &lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
-      <category term="Bugs" scheme="http://yoursite.com/categories/Bugs/"/>
+    
+      <category term="Driving" scheme="http://yoursite.com/tags/Driving/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git Overview</title>
+    <link href="http://yoursite.com/2021/10/11/Git-Overview/"/>
+    <id>http://yoursite.com/2021/10/11/Git-Overview/</id>
+    <published>2021-10-11T12:48:44.000Z</published>
+    <updated>2021-10-11T13:07:55.443Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Version-Control-System-Introduction&quot;&gt;&lt;a href=&quot;#Version-Control-System-Introduction&quot; class=&quot;headerlink&quot; title=&quot;Version Control System Introduction&quot;&gt;&lt;/a&gt;Version Control System Introduction&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Version Control System&lt;ul&gt;
+&lt;li&gt;Tools to keep track of changes to files over time &lt;/li&gt;
+&lt;li&gt;Allow you to view/revert back to previous iterations of files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Git &lt;ul&gt;
+&lt;li&gt;Distributed version control system: each developer’s laptop stores the entire history of a project (repository - files + history)&lt;/li&gt;
+&lt;li&gt;Allow usage without Internet &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
     
     
-      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+      <category term="CS61B" scheme="http://yoursite.com/tags/CS61B/"/>
     
-      <category term="bug fix" scheme="http://yoursite.com/tags/bug-fix/"/>
+  </entry>
+  
+  <entry>
+    <title>Cat Insurance Research</title>
+    <link href="http://yoursite.com/2021/10/10/Cat-Insurance/"/>
+    <id>http://yoursite.com/2021/10/10/Cat-Insurance/</id>
+    <published>2021-10-11T01:55:22.000Z</published>
+    <updated>2021-10-19T12:50:11.695Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;Below is a demo of Demo! 🐈&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;center&gt;&lt;img src=&quot;/2021/10/10/Cat-Insurance/quick-demo-of-Demo.gif&quot; width height=&quot;2&quot;&gt;&lt;/center&gt;
+    
+    </summary>
+    
+    
+      <category term="Demo" scheme="http://yoursite.com/tags/Demo/"/>
     
   </entry>
   
@@ -343,28 +399,6 @@
   </entry>
   
   <entry>
-    <title>Knuth-Morris-Pratt(KMP) Algorithm</title>
-    <link href="http://yoursite.com/2019/07/06/Knuth-Morris-Pratt-KMP-Algorithm/"/>
-    <id>http://yoursite.com/2019/07/06/Knuth-Morris-Pratt-KMP-Algorithm/</id>
-    <published>2019-07-06T14:17:18.000Z</published>
-    <updated>2019-07-06T02:18:33.212Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://yoursite.com/categories/Algorithm/LeetCode/"/>
-    
-    
-      <category term="Algorithm" scheme="http://yoursite.com/tags/Algorithm/"/>
-    
-      <category term="KMP" scheme="http://yoursite.com/tags/KMP/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Big Data Analytics</title>
     <link href="http://yoursite.com/2019/07/06/Big-Data-Analytics/"/>
     <id>http://yoursite.com/2019/07/06/Big-Data-Analytics/</id>
@@ -383,27 +417,6 @@
       <category term="sequential analytics" scheme="http://yoursite.com/tags/sequential-analytics/"/>
     
       <category term="MapReduce" scheme="http://yoursite.com/tags/MapReduce/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git: Local &amp; Remote Repo</title>
-    <link href="http://yoursite.com/2019/07/05/Git-Local-Remote-Repo/"/>
-    <id>http://yoursite.com/2019/07/05/Git-Local-Remote-Repo/</id>
-    <published>2019-07-06T03:00:50.000Z</published>
-    <updated>2019-07-06T02:02:09.676Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;Git-amp-Local-Repos&quot;&gt;&lt;a href=&quot;#Git-amp-Local-Repos&quot; class=&quot;headerlink&quot; title=&quot;Git &amp;amp; Local Repos&quot;&gt;&lt;/a&gt;Git &amp;amp; Local Repos&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Version Control System&lt;/strong&gt;&lt;br&gt;&amp;emsp;Track the history of code revision&lt;br&gt;&amp;emsp;Git is a distributed version control system&lt;br&gt;&amp;emsp;&amp;emsp;&amp;emsp;each developer’s computer store the entire history&lt;br&gt;&amp;emsp;Repository = entire history of an entire project&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Git" scheme="http://yoursite.com/categories/Git/"/>
-    
-    
-      <category term="git" scheme="http://yoursite.com/tags/git/"/>
     
   </entry>
   
